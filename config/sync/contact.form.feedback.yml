@@ -1,0 +1,14 @@
+uuid: 3236d9a0-f85f-4821-97a1-a3b0b0fba014
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vymHlgJy26BuI5GGj9-IXjwR3dRC5C0tij4BpWJnoqw
+id: feedback
+label: 'Website feedback'
+recipients:
+  - drupalviking@gmail.com
+reply: ''
+weight: 0
+message: 'Your message has been sent.'
+redirect: ''
