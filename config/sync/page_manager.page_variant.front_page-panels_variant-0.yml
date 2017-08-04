@@ -1,0 +1,41 @@
+uuid: b4413396-ed51-43f5-affc-d6a9555d3862
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.front_page
+    - views.view.adildafelog
+  module:
+    - panels
+    - views
+id: front_page-panels_variant-0
+label: 'Front page'
+variant: panels_variant
+variant_settings:
+  blocks:
+    a01fa713-86ea-4cd6-bdeb-a70c1d6307d7:
+      id: 'views_block:adildafelog-block_1'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: content
+      weight: 0
+      uuid: a01fa713-86ea-4cd6-bdeb-a70c1d6307d7
+      context_mapping: {  }
+  id: panels_variant
+  uuid: d0e6b60d-2208-40f7-b197-cea251ee3be1
+  label: null
+  weight: 0
+  layout: layout_onecol
+  layout_settings: {  }
+  page_title: ''
+  storage_type: page_manager
+  storage_id: front_page-panels_variant-0
+  builder: standard
+page: front_page
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }
