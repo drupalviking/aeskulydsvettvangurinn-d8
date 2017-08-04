@@ -1,0 +1,16 @@
+uuid: 3888f4f9-a112-4d15-8d79-42efbb54a714
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: portrait_320x480
+label: 'Portrait 320x480'
+effects:
+  651d777b-0bca-419d-8949-fe6d971c5948:
+    uuid: 651d777b-0bca-419d-8949-fe6d971c5948
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 320
+      height: 480

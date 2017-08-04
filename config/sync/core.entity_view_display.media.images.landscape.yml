@@ -1,0 +1,36 @@
+uuid: e31daca0-d559-4f69-a8d4-7d5d02c8cfe6
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.landscape
+    - field.field.media.images.field_height
+    - field.field.media.images.field_image
+    - field.field.media.images.field_mime
+    - field.field.media.images.field_width
+    - image.style.landscape_480x270
+    - media_entity.bundle.images
+  module:
+    - image
+id: media.images.landscape
+targetEntityType: media
+bundle: images
+mode: landscape
+content:
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: landscape_480x270
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  created: true
+  field_height: true
+  field_mime: true
+  field_width: true
+  name: true
+  thumbnail: true
+  uid: true

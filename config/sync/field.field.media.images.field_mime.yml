@@ -1,0 +1,19 @@
+uuid: 5a100540-5360-40a9-86dc-682a737d7c84
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_mime
+    - media_entity.bundle.images
+id: media.images.field_mime
+field_name: field_mime
+entity_type: media
+bundle: images
+label: Mime
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

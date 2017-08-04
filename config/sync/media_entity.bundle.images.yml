@@ -1,0 +1,23 @@
+uuid: 8edcf9d3-80cb-4847-a8b0-f840832d10c7
+langcode: en
+status: true
+dependencies:
+  module:
+    - crop
+    - media_entity_image
+third_party_settings:
+  crop:
+    image_field: field_image
+id: images
+label: Images
+description: 'This bundle handles all images on the site'
+type: image
+queue_thumbnail_downloads: false
+new_revision: false
+type_configuration:
+  source_field: field_image
+  gather_exif: false
+field_map:
+  mime: field_mime
+  width: field_width
+  height: field_height

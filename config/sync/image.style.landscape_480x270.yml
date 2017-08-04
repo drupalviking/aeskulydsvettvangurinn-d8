@@ -1,0 +1,16 @@
+uuid: 1ea09b19-b265-4429-8278-e555b5ca0243
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: landscape_480x270
+label: 'Landscape 480x270'
+effects:
+  782e78bb-a0b8-46a8-b44a-037a439cd0dc:
+    uuid: 782e78bb-a0b8-46a8-b44a-037a439cd0dc
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 480
+      height: 270
