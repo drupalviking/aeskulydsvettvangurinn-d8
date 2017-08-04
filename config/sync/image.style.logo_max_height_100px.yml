@@ -1,0 +1,15 @@
+uuid: 875c6c43-7e3d-431a-990c-be6a27cef567
+langcode: en
+status: true
+dependencies: {  }
+name: logo_max_height_100px
+label: 'Logo (max height 100px)'
+effects:
+  c1e0f477-c88e-4740-9765-d5d15a445a75:
+    uuid: c1e0f477-c88e-4740-9765-d5d15a445a75
+    id: image_scale
+    weight: 1
+    data:
+      width: null
+      height: 100
+      upscale: false

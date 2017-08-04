@@ -1,0 +1,10 @@
+uuid: 2b63d5c7-2b56-432a-a93a-be4d7cebc4bc
+langcode: en
+status: true
+dependencies:
+  module:
+    - media_entity
+id: media.logo_max_height_100px
+label: 'Logo (max height 100px)'
+targetEntityType: media
+cache: true

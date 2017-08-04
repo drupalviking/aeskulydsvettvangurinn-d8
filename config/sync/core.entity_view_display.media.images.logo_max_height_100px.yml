@@ -1,0 +1,36 @@
+uuid: efddbf8f-ed57-45ba-a8b3-a31c46923f98
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.logo_max_height_100px
+    - field.field.media.images.field_height
+    - field.field.media.images.field_image
+    - field.field.media.images.field_mime
+    - field.field.media.images.field_width
+    - image.style.logo_max_height_100px
+    - media_entity.bundle.images
+  module:
+    - image
+id: media.images.logo_max_height_100px
+targetEntityType: media
+bundle: images
+mode: logo_max_height_100px
+content:
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: logo_max_height_100px
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  created: true
+  field_height: true
+  field_mime: true
+  field_width: true
+  name: true
+  thumbnail: true
+  uid: true
