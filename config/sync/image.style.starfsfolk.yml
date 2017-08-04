@@ -1,0 +1,16 @@
+uuid: 90bc8971-60df-4d88-b4f1-d090997cc112
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: starfsfolk
+label: Starfsfólk
+effects:
+  12ee3e8a-1ecd-48b9-81a7-2755d6655b4a:
+    uuid: 12ee3e8a-1ecd-48b9-81a7-2755d6655b4a
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 120
+      height: 200

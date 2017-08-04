@@ -1,0 +1,22 @@
+uuid: 867935b8-58a0-485d-96cd-24c03600854f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.starfsfolk
+id: node.starfsfolk.promote
+field_name: promote
+entity_type: node
+bundle: starfsfolk
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

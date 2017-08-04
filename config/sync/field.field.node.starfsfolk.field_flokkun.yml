@@ -1,0 +1,28 @@
+uuid: c739e5a5-c2fd-4369-885e-18c3dd29c914
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_flokkun
+    - node.type.starfsfolk
+    - taxonomy.vocabulary.tegundir_starfsfolks
+id: node.starfsfolk.field_flokkun
+field_name: field_flokkun
+entity_type: node
+bundle: starfsfolk
+label: Flokkun
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tegundir_starfsfolks: tegundir_starfsfolks
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

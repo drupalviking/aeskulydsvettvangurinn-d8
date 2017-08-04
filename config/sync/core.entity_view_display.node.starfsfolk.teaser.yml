@@ -1,0 +1,24 @@
+uuid: db341baa-e3ed-477e-9913-18b8666189f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.starfsfolk.field_flokkun
+    - field.field.node.starfsfolk.field_mynd
+    - field.field.node.starfsfolk.field_netfang
+    - node.type.starfsfolk
+  module:
+    - user
+id: node.starfsfolk.teaser
+targetEntityType: node
+bundle: starfsfolk
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_flokkun: true
+  field_mynd: true
+  field_netfang: true

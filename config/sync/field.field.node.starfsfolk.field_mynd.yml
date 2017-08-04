@@ -1,0 +1,29 @@
+uuid: 578fca43-ec46-4317-b2e7-4dbf76d4e94d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mynd
+    - media_entity.bundle.images
+    - node.type.starfsfolk
+id: node.starfsfolk.field_mynd
+field_name: field_mynd
+entity_type: node
+bundle: starfsfolk
+label: Mynd
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      images: images
+    sort:
+      field: name
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

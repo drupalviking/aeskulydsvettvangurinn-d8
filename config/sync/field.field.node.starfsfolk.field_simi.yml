@@ -1,0 +1,21 @@
+uuid: a482ba3c-5615-48e8-97c3-2959f1460ee7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_simi
+    - node.type.starfsfolk
+  module:
+    - telephone
+id: node.starfsfolk.field_simi
+field_name: field_simi
+entity_type: node
+bundle: starfsfolk
+label: Sími
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

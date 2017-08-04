@@ -1,0 +1,18 @@
+uuid: e62bcb27-1f31-4cb9-8514-7b7929e087b4
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_netfang
+field_name: field_netfang
+entity_type: node
+type: email
+settings: {  }
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

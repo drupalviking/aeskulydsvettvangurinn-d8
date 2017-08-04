@@ -1,0 +1,18 @@
+uuid: 7ee2c2f8-82f4-47f7-9fb1-cbe27d71c966
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.starfsfolk
+id: node.starfsfolk.title
+field_name: title
+entity_type: node
+bundle: starfsfolk
+label: Nafn
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

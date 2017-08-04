@@ -1,0 +1,99 @@
+uuid: 603bba9d-db8d-4f99-89db-0e0eb9f89f5c
+langcode: en
+status: true
+dependencies:
+  config:
+    - entity_browser.browser.media_browser
+    - field.field.node.starfsfolk.field_flokkun
+    - field.field.node.starfsfolk.field_mynd
+    - field.field.node.starfsfolk.field_netfang
+    - field.field.node.starfsfolk.field_simi
+    - node.type.starfsfolk
+  module:
+    - entity_browser
+    - path
+    - telephone
+id: node.starfsfolk.default
+targetEntityType: node
+bundle: starfsfolk
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_flokkun:
+    weight: 9
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_mynd:
+    weight: 6
+    settings:
+      entity_browser: media_browser
+      field_widget_display: rendered_entity
+      field_widget_edit: true
+      field_widget_remove: true
+      open: true
+      selection_mode: selection_append
+      field_widget_display_settings:
+        view_mode: default
+    third_party_settings: {  }
+    type: entity_browser_entity_reference
+    region: content
+  field_netfang:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: Netfang
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  field_simi:
+    weight: 8
+    settings:
+      placeholder: Símanúmer
+    third_party_settings: {  }
+    type: telephone_default
+    region: content
+  path:
+    type: path
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 3
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 4
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+hidden: {  }
