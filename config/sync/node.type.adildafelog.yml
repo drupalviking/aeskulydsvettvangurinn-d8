@@ -1,0 +1,18 @@
+uuid: 60927306-16b9-4a0b-989d-41a5c6551cd3
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Aðildafélög
+type: adildafelog
+description: 'Hér eru geymdar upplýsingar um þau aðildafélög sem eiga aðild að Æskulýðsvettvanginum'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

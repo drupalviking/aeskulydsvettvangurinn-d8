@@ -1,0 +1,22 @@
+uuid: 2d7d5e8f-68c3-492d-964a-dd64a9615830
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.adildafelog
+  module:
+    - text
+id: node.adildafelog.body
+field_name: body
+entity_type: node
+bundle: adildafelog
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

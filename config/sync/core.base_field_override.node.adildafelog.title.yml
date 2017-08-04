@@ -1,0 +1,18 @@
+uuid: 21803978-14f0-4c5d-872e-97b13f273089
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.adildafelog
+id: node.adildafelog.title
+field_name: title
+entity_type: node
+bundle: adildafelog
+label: Nafn
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
