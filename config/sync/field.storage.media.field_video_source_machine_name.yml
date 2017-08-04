@@ -1,0 +1,21 @@
+uuid: defdeb3f-9709-4f01-a6d9-ab2f3c287d87
+langcode: en
+status: true
+dependencies:
+  module:
+    - media_entity
+id: media.field_video_source_machine_name
+field_name: field_video_source_machine_name
+entity_type: media
+type: string
+settings:
+  max_length: 100
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

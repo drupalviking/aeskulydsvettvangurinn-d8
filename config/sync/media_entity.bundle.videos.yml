@@ -1,0 +1,23 @@
+uuid: 80c890da-47a0-46f7-be77-c108952c0fed
+langcode: en
+status: true
+dependencies:
+  module:
+    - crop
+    - video_embed_media
+third_party_settings:
+  crop:
+    image_field: null
+id: videos
+label: Videos
+description: 'This bundle handles all videos on the site'
+type: video_embed_field
+queue_thumbnail_downloads: false
+new_revision: false
+type_configuration:
+  source_field: field_media_video_embed_field
+field_map:
+  id: field_video_id
+  source: field_video_source_machine_name
+  source_name: field_video_source_human_name
+  image_local: thumbnail

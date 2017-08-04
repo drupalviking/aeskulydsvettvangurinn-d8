@@ -1,0 +1,22 @@
+uuid: 39eb2200-8609-41eb-bb5e-f8955c885b14
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_video_embed_field
+    - media_entity.bundle.videos
+  module:
+    - video_embed_field
+id: media.videos.field_media_video_embed_field
+field_name: field_media_video_embed_field
+entity_type: media
+bundle: videos
+label: 'Video URL'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_providers: {  }
+field_type: video_embed_field
