@@ -3,11 +3,13 @@ langcode: en
 status: true
 dependencies:
   config:
+    - entity_browser.browser.document_browser
     - field.field.node.verkefni.body
     - field.field.node.verkefni.field_mynd
     - field.field.node.verkefni.field_skjol
     - node.type.verkefni
   module:
+    - entity_browser
     - path
     - text
 id: node.verkefni.default
@@ -33,20 +35,29 @@ content:
   field_mynd:
     weight: 32
     settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
+      entity_browser: media_browser
+      field_widget_display: rendered_entity
+      field_widget_edit: true
+      field_widget_remove: true
+      selection_mode: selection_append
+      field_widget_display_settings:
+        view_mode: default
+      open: false
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: entity_browser_entity_reference
     region: content
   field_skjol:
     weight: 33
     settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
+      entity_browser: document_browser
+      field_widget_display: label
+      field_widget_edit: true
+      field_widget_remove: true
+      selection_mode: selection_append
+      open: false
+      field_widget_display_settings: {  }
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: entity_browser_entity_reference
     region: content
   path:
     type: path
