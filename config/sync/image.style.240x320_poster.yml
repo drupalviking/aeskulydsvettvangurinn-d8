@@ -1,0 +1,16 @@
+uuid: 484c8087-b332-4a2d-b8c1-34e1820af481
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: 240x320_poster
+label: '240x320 (Poster)'
+effects:
+  0d16901e-22f4-4f8d-848c-67e4b0feea4d:
+    uuid: 0d16901e-22f4-4f8d-848c-67e4b0feea4d
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 240
+      height: 320

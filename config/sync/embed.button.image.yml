@@ -20,6 +20,7 @@ type_settings:
     - 'view_mode:media.landscape'
     - 'view_mode:media.logo_max_height_100px'
     - 'view_mode:media.portrait'
+    - 'view_mode:media.poster_medium'
     - 'view_mode:media.poster_small'
     - 'view_mode:media.staff'
   entity_browser: media_browser
