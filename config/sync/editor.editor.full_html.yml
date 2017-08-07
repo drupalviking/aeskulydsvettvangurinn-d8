@@ -40,6 +40,9 @@ settings:
             - Blockquote
             - Table
             - HorizontalRule
+            - image
+            - node
+            - documents_
         -
           name: 'Block Formatting'
           items:

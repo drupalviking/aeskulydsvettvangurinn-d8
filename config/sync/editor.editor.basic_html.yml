@@ -33,6 +33,8 @@ settings:
           name: Media
           items:
             - Blockquote
+            - image
+            - documents_
         -
           name: 'Block Formatting'
           items:

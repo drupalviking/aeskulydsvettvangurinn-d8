@@ -7,10 +7,10 @@ dependencies:
 name: 180x240_poster
 label: '180x240 (Poster)'
 effects:
-  9ca8c73a-cbfa-41e8-b3d0-45ab0622d8f3:
-    uuid: 9ca8c73a-cbfa-41e8-b3d0-45ab0622d8f3
-    id: focal_point_crop
-    weight: 1
+  6efa3ec2-4205-4554-bbbb-7cfb83b392aa:
+    uuid: 6efa3ec2-4205-4554-bbbb-7cfb83b392aa
+    id: focal_point_scale_and_crop
+    weight: 2
     data:
       width: 180
       height: 240

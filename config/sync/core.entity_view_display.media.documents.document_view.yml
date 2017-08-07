@@ -1,8 +1,9 @@
-uuid: 43c95170-c3ce-4487-8387-c36ed37379c7
+uuid: 3aa33bdf-7ee8-488a-bb45-a34c27a5f792
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.media.document_view
     - field.field.media.documents.field_file
     - field.field.media.documents.field_image
     - field.field.media.documents.field_mime
@@ -12,10 +13,10 @@ dependencies:
   module:
     - file
     - image
-id: media.documents.default
+id: media.documents.document_view
 targetEntityType: media
 bundle: documents
-mode: default
+mode: document_view
 content:
   field_file:
     weight: 1

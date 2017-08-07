@@ -4,11 +4,14 @@ status: true
 dependencies:
   config:
     - field.field.media.documents.field_file
+    - field.field.media.documents.field_image
     - field.field.media.documents.field_mime
     - field.field.media.documents.field_size
+    - image.style.thumbnail
     - media_entity.bundle.documents
   module:
     - file
+    - image
 id: media.documents.default
 targetEntityType: media
 bundle: documents
@@ -26,6 +29,14 @@ content:
       progress_indicator: throbber
     third_party_settings: {  }
     type: file_generic
+    region: content
+  field_image:
+    weight: 4
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
     region: content
   name:
     type: string_textfield

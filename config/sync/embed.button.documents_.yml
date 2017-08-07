@@ -1,0 +1,24 @@
+uuid: ad78d187-3231-4392-8cf4-e16b7b1d982f
+langcode: en
+status: true
+dependencies:
+  config:
+    - media_entity.bundle.documents
+  content:
+    - 'file:file:8603b0ca-e9a4-43cd-8fd9-968855685ec1'
+  module:
+    - entity_embed
+    - media_entity
+label: 'Documents '
+id: documents_
+type_id: entity
+type_settings:
+  entity_type: media
+  bundles:
+    - documents
+  display_plugins:
+    - 'entity_reference:entity_reference_label'
+  entity_browser: document_browser
+  entity_browser_settings:
+    display_review: true
+icon_uuid: 8603b0ca-e9a4-43cd-8fd9-968855685ec1
