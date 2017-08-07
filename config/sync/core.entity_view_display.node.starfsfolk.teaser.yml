@@ -7,18 +7,40 @@ dependencies:
     - field.field.node.starfsfolk.field_flokkun
     - field.field.node.starfsfolk.field_mynd
     - field.field.node.starfsfolk.field_netfang
+    - field.field.node.starfsfolk.field_simi
     - node.type.starfsfolk
   module:
+    - telephone
     - user
 id: node.starfsfolk.teaser
 targetEntityType: node
 bundle: starfsfolk
 mode: teaser
 content:
-  links:
-    weight: 100
+  field_mynd:
+    type: entity_reference_entity_view
+    weight: 0
     region: content
+    label: hidden
+    settings:
+      view_mode: staff
+      link: false
+    third_party_settings: {  }
+  field_netfang:
+    type: email_mailto
+    weight: 1
+    region: content
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+  field_simi:
+    type: telephone_link
+    weight: 2
+    region: content
+    label: inline
+    settings:
+      title: ''
+    third_party_settings: {  }
 hidden:
   field_flokkun: true
-  field_mynd: true
-  field_netfang: true
+  links: true
