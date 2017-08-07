@@ -5,10 +5,37 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.verkefni.body
+    - field.field.node.verkefni.field_mynd
+    - field.field.node.verkefni.field_skjol
     - node.type.verkefni
   module:
+    - ds
     - text
     - user
+third_party_settings:
+  ds:
+    layout:
+      id: layout_onecol
+      library: layout_discovery/onecol
+      disable_css: false
+      entity_classes: all_classes
+      settings: {  }
+    regions:
+      content:
+        - node_title
+        - field_mynd
+        - body
+        - links
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 0
+        label: hidden
+        formatter: default
+        settings:
+          link: true
+          wrapper: h2
+          class: ''
 id: node.verkefni.teaser
 targetEntityType: node
 bundle: verkefni
@@ -17,12 +44,24 @@ content:
   body:
     label: hidden
     type: text_summary_or_trimmed
-    weight: 101
+    weight: 2
     settings:
-      trim_length: 600
+      trim_length: 100
     third_party_settings: {  }
     region: content
-  links:
-    weight: 100
+  field_mynd:
+    type: entity_reference_entity_view
+    weight: 1
     region: content
-hidden: {  }
+    label: hidden
+    settings:
+      view_mode: poster_small
+      link: false
+    third_party_settings: {  }
+  links:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_skjol: true

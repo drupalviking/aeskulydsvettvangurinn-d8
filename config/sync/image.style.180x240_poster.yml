@@ -1,0 +1,16 @@
+uuid: 38ce661a-24a2-48b1-8b46-9980979cca53
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: 180x240_poster
+label: '180x240 (Poster)'
+effects:
+  9ca8c73a-cbfa-41e8-b3d0-45ab0622d8f3:
+    uuid: 9ca8c73a-cbfa-41e8-b3d0-45ab0622d8f3
+    id: focal_point_crop
+    weight: 1
+    data:
+      width: 180
+      height: 240

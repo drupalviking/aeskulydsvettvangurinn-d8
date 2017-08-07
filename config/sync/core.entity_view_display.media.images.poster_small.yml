@@ -1,0 +1,36 @@
+uuid: 2fe9767a-2815-4d91-a2b3-4185a3b4a846
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.poster_small
+    - field.field.media.images.field_height
+    - field.field.media.images.field_image
+    - field.field.media.images.field_mime
+    - field.field.media.images.field_width
+    - image.style.180x240_poster
+    - media_entity.bundle.images
+  module:
+    - image
+id: media.images.poster_small
+targetEntityType: media
+bundle: images
+mode: poster_small
+content:
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: 180x240_poster
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  created: true
+  field_height: true
+  field_mime: true
+  field_width: true
+  name: true
+  thumbnail: true
+  uid: true

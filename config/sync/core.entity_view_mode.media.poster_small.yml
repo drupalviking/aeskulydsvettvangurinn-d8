@@ -1,0 +1,10 @@
+uuid: 28c78407-17db-41b9-9e6c-e89d3b125925
+langcode: en
+status: true
+dependencies:
+  module:
+    - media_entity
+id: media.poster_small
+label: 'Poster small'
+targetEntityType: media
+cache: true
