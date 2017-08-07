@@ -1,0 +1,30 @@
+uuid: 17d5cf15-3b68-4cb6-90ce-50c5729c371c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mynd
+    - media_entity.bundle.images
+    - media_entity.bundle.videos
+    - node.type.page
+id: node.page.field_mynd
+field_name: field_mynd
+entity_type: node
+bundle: page
+label: Mynd
+description: 'Aðalmynd síðunnar. Má vera myndband líka. Birtist í haus síðunnar.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      images: images
+      videos: videos
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: images
+field_type: entity_reference
