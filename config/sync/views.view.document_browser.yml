@@ -1,9 +1,8 @@
-uuid: 33e7b670-23fc-464e-bd45-e08874191e4f
+uuid: 29b6a343-ca89-429c-bdcd-cd96d84aae7b
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.media.field_image
     - image.style.thumbnail
     - media_entity.bundle.documents
     - media_entity.bundle.images
@@ -13,8 +12,8 @@ dependencies:
     - image
     - media_entity
     - user
-id: media_browser
-label: 'Media browser'
+id: document_browser
+label: 'Document browser'
 module: views
 description: ''
 tag: ''
@@ -152,14 +151,14 @@ display:
           hide_alter_empty: true
           entity_type: media
           plugin_id: entity_browser_select
-        field_image:
-          id: field_image
-          table: media__field_image
-          field: field_image
+        thumbnail__target_id:
+          id: thumbnail__target_id
+          table: media_field_data
+          field: thumbnail__target_id
           relationship: none
           group_type: group
           admin_label: ''
-          label: Image
+          label: Thumbnail
           exclude: false
           alter:
             alter_text: false
@@ -204,7 +203,7 @@ display:
           type: image
           settings:
             image_style: thumbnail
-            image_link: ''
+            image_link: file
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -215,6 +214,8 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+          entity_type: media
+          entity_field: thumbnail
           plugin_id: field
         name:
           id: name
@@ -345,16 +346,74 @@ display:
         - 'languages:language_interface'
         - url.query_args
         - user.permissions
-      tags:
-        - 'config:field.storage.media.field_image'
-  entity_browser_1:
+      tags: {  }
+  entity_browser_2:
     display_plugin: entity_browser
-    id: entity_browser_1
-    display_title: 'Image and video browser'
+    id: entity_browser_2
+    display_title: 'Document browser'
     position: 1
     display_options:
       display_extenders: {  }
       display_description: ''
+      filters:
+        status:
+          value: '1'
+          table: media_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: media
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        bundle:
+          id: bundle
+          table: media_field_data
+          field: bundle
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
+          value:
+            documents: documents
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: media
+          entity_field: bundle
+          plugin_id: bundle
+      defaults:
+        filters: false
+        filter_groups: false
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
     cache_metadata:
       max-age: 0
       contexts:
@@ -362,5 +421,4 @@ display:
         - 'languages:language_interface'
         - url.query_args
         - user.permissions
-      tags:
-        - 'config:field.storage.media.field_image'
+      tags: {  }

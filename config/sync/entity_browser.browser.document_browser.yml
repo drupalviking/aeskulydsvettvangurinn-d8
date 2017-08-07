@@ -1,0 +1,31 @@
+uuid: cd20e9c7-491a-462f-9f68-b2fe1f02ea94
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.document_browser
+  module:
+    - views
+name: document_browser
+label: 'Document browser'
+display: iframe
+display_configuration:
+  width: '650'
+  height: '500'
+  link_text: 'Select entities'
+  auto_open: true
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  9aed434c-25a2-4d50-81cb-ba640476239b:
+    settings:
+      view: document_browser
+      view_display: entity_browser_2
+      submit_text: 'Select entities'
+      auto_select: false
+    uuid: 9aed434c-25a2-4d50-81cb-ba640476239b
+    weight: 1
+    label: View
+    id: view

@@ -1,0 +1,30 @@
+uuid: 43c95170-c3ce-4487-8387-c36ed37379c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.documents.field_file
+    - field.field.media.documents.field_mime
+    - field.field.media.documents.field_size
+    - media_entity.bundle.documents
+  module:
+    - file
+id: media.documents.default
+targetEntityType: media
+bundle: documents
+mode: default
+content:
+  field_file:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+    region: content
+hidden:
+  created: true
+  field_mime: true
+  field_size: true
+  name: true
+  thumbnail: true
+  uid: true

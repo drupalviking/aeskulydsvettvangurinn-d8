@@ -1,0 +1,21 @@
+uuid: fc6fb88a-e8ac-45c8-8d37-95ff9fd5123f
+langcode: en
+status: true
+dependencies:
+  module:
+    - crop
+    - media_entity_document
+third_party_settings:
+  crop:
+    image_field: field_file
+id: documents
+label: Documents
+description: 'This bundle handles all documents on the site.  Pdf, Excel, Word .....'
+type: document
+queue_thumbnail_downloads: false
+new_revision: false
+type_configuration:
+  source_field: field_file
+field_map:
+  mime: field_mime
+  size: field_size

@@ -3,9 +3,10 @@ langcode: en
 status: true
 dependencies:
   config:
-    - entity_browser.browser.media_browser
+    - entity_browser.browser.document_browser
     - field.field.node.page.body
     - field.field.node.page.field_mynd
+    - field.field.node.page.field_skjol
     - node.type.page
   module:
     - entity_browser
@@ -44,6 +45,19 @@ content:
       field_widget_display_settings:
         view_mode: logo_max_height_100px
       open: false
+    third_party_settings: {  }
+    type: entity_browser_entity_reference
+    region: content
+  field_skjol:
+    weight: 33
+    settings:
+      entity_browser: document_browser
+      field_widget_display: label
+      field_widget_edit: true
+      field_widget_remove: true
+      selection_mode: selection_append
+      open: false
+      field_widget_display_settings: {  }
     third_party_settings: {  }
     type: entity_browser_entity_reference
     region: content

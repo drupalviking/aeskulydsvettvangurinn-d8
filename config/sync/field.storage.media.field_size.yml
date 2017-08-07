@@ -1,0 +1,20 @@
+uuid: 00edb1a6-8bda-4311-8af6-e097fef81b78
+langcode: en
+status: true
+dependencies:
+  module:
+    - media_entity
+id: media.field_size
+field_name: field_size
+entity_type: media
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,23 @@
+uuid: 664b7afe-238a-4f4d-b567-7f3c6d90f797
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_size
+    - media_entity.bundle.documents
+id: media.documents.field_size
+field_name: field_size
+entity_type: media
+bundle: documents
+label: Size
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer
