@@ -1,0 +1,47 @@
+uuid: 1066e61f-7291-4cf4-bc57-1cf1fd0d71e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.verkefni.body
+    - field.field.node.verkefni.field_mynd
+    - field.field.node.verkefni.field_skjol
+    - node.type.verkefni
+  module:
+    - text
+    - user
+id: node.verkefni.default
+targetEntityType: node
+bundle: verkefni
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_mynd:
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: portrait
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_skjol:
+    weight: 3
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

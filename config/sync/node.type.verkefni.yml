@@ -1,0 +1,18 @@
+uuid: 00d234ac-ea5b-461d-bd32-662c5165d8d2
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Verkefni
+type: verkefni
+description: 'Hér eru sett inn öll þau verkefni sem ÆV er með á sinni könnu.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

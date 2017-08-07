@@ -1,0 +1,28 @@
+uuid: 34990aba-4a5d-49de-adfa-08589a0861f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.verkefni.body
+    - node.type.verkefni
+  module:
+    - text
+    - user
+id: node.verkefni.teaser
+targetEntityType: node
+bundle: verkefni
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

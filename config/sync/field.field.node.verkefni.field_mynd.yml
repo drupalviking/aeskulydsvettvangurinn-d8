@@ -1,0 +1,28 @@
+uuid: a61c6e0d-c9b3-44cd-a8a8-d703ccfc0d03
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mynd
+    - media_entity.bundle.images
+    - node.type.verkefni
+id: node.verkefni.field_mynd
+field_name: field_mynd
+entity_type: node
+bundle: verkefni
+label: Mynd
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      images: images
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -8,6 +8,7 @@ dependencies:
     - field.storage.node.field_netfang
     - field.storage.node.field_simi
     - node.type.starfsfolk
+    - system.menu.main
     - taxonomy.vocabulary.tegundir_starfsfolks
   content:
     - 'taxonomy_term:tegundir_starfsfolks:26d90f7d-ec4d-4194-8c2c-13450cae743c'
@@ -549,7 +550,16 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: starfsfolk
+      path: starfsmenn-og-stjorn
+      menu:
+        type: normal
+        title: 'Starfsfólk og stjórn'
+        description: ''
+        expanded: false
+        parent: 'menu_link_content:53c3500a-5baf-4452-afa8-7459afc5ee56'
+        weight: 0
+        context: '0'
+        menu_name: main
     cache_metadata:
       max-age: -1
       contexts:

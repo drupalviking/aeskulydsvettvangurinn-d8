@@ -1,0 +1,18 @@
+uuid: 503f4ea0-b0d9-4933-8b56-3f7618d56072
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.verkefni
+id: node.verkefni.title
+field_name: title
+entity_type: node
+bundle: verkefni
+label: Titill
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,29 @@
+uuid: c99243bc-a155-48bf-ba86-a0d672b10ac7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_skjol
+    - media_entity.bundle.documents
+    - node.type.verkefni
+id: node.verkefni.field_skjol
+field_name: field_skjol
+entity_type: node
+bundle: verkefni
+label: Skjöl
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      documents: documents
+    sort:
+      field: name
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
