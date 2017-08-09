@@ -71,7 +71,7 @@ display:
               field: field_flokkun
               rendered: true
               rendered_strip: false
-          row_class: ''
+          row_class: 'col-lg-3 col-md-3 col-sm-6 col-xs-12'
           default_row_class: true
           type: ul
           wrapper_class: item-list
