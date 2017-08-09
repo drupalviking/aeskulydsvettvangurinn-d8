@@ -41,9 +41,16 @@ content:
     weight: 1
     label: hidden
     settings:
-      view_mode: poster_small
+      view_mode: portrait
       link: false
-    third_party_settings: {  }
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
     type: entity_reference_entity_view
     region: content
   field_skjol:
