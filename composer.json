@@ -59,6 +59,8 @@
     "require": {
         "composer/installers": "^1.2",
         "cweagans/composer-patches": "^1.6",
+        "desandro/imagesloaded": "3.2.0",
+        "desandro/masonry": "3.3.2",
         "drupal-composer/drupal-scaffold": "^2.2",
         "drupal/admin_toolbar": "^1.19",
         "drupal/adminimal_admin_toolbar": "^1.5",
@@ -70,6 +72,7 @@
         "drupal/contact_storage": "^1.0@beta",
         "drupal/content_browser": "^1.0@alpha",
         "drupal/core": "~8.0",
+        "drupal/devel": "^1.0@RC",
         "drupal/dropzonejs": "^1.0@alpha",
         "drupal/ds": "^3.1",
         "drupal/entity_browser": "^1.0",
@@ -99,8 +102,6 @@
         "drupal/views_slideshow": "^4.5",
         "drush/drush": "~8.0",
         "enyo/dropzone": "^5.1",
-        "desandro/masonry": "3.3.2",
-        "desandro/imagesloaded": "3.2.0",
         "thememachine/eleven": "^8.0-beta1",
         "webflo/drupal-finder": "^0.3.0",
         "webmozart/path-util": "^2.3"

@@ -12,6 +12,7 @@
     color: $brand-primary;
     border-bottom: 1px solid $input-border;
     border-top: 1px solid $input-border;
+    padding: 10px 5px;
     &:first-child {
       border-left: 1px solid $input-border;
     }
@@ -58,4 +59,11 @@
 
 .image-widget.row {
   overflow: hidden;
+}
+
+.document-thumbnail {
+  .img-responsive {
+    width: 30px;
+    max-width: inherit;
+  }
 }
