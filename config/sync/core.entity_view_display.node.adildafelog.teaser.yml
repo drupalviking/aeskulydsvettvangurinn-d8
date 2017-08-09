@@ -21,25 +21,9 @@ third_party_settings:
       settings: {  }
     regions:
       content:
-        - node_title
         - field_logo
         - body
-    fields:
-      node_title:
-        plugin_id: node_title
-        weight: 0
-        label: hidden
-        formatter: default
-        settings:
-          link: true
-          wrapper: h3
-          class: ''
-        ft:
-          id: default
-          settings:
-            lb: ''
-            lb-col: false
-            classes: {  }
+        - links
 id: node.adildafelog.teaser
 targetEntityType: node
 bundle: adildafelog
@@ -48,19 +32,23 @@ content:
   body:
     label: hidden
     type: text_summary_or_trimmed
-    weight: 2
+    weight: 1
     settings:
       trim_length: 600
     third_party_settings: {  }
     region: content
   field_logo:
     type: entity_reference_entity_view
-    weight: 1
+    weight: 0
     region: content
     label: hidden
     settings:
       view_mode: logo_max_height_100px
       link: false
     third_party_settings: {  }
-hidden:
-  links: true
+  links:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }
