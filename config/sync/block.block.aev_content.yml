@@ -1,0 +1,22 @@
+uuid: 1ac829fe-0586-49b2-b054-5a01dc4e58b1
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - aev
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: aev_content
+theme: aev
+region: content
+weight: -1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

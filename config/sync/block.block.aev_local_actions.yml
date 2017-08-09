@@ -1,0 +1,20 @@
+uuid: 23c915ee-1b04-4b2a-81a7-73eb81056ae2
+langcode: en
+status: true
+dependencies:
+  theme:
+    - aev
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: aev_local_actions
+theme: aev
+region: content
+weight: -2
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

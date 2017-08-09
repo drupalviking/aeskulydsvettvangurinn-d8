@@ -1,0 +1,22 @@
+uuid: eb0ebc8a-372c-4ff9-af4e-ef1588dcaaa9
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - aev
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: aev_messages
+theme: aev
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

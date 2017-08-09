@@ -1,0 +1,22 @@
+uuid: 693b3590-fc73-4613-a388-6244f249f99e
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - aev
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: aev_breadcrumbs
+theme: aev
+region: content
+weight: -6
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

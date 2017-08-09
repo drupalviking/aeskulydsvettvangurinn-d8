@@ -1,0 +1,22 @@
+uuid: 5317a1bc-4fc5-450f-b0f7-179cd212f585
+langcode: en
+status: true
+dependencies:
+  theme:
+    - aev
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: aev_local_tasks
+theme: aev
+region: content
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

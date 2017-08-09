@@ -194,6 +194,10 @@ display:
         title: Verkefni
         menu_name: main
         weight: -48
+        description: ''
+        parent: ''
+        expanded: true
+        enabled: true
     cache_metadata:
       max-age: -1
       contexts:
