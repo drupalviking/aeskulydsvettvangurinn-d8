@@ -55,6 +55,13 @@ display:
           offset: 0
       style:
         type: html_list
+        options:
+          row_class: 'col col-sm-3'
+          default_row_class: true
+          uses_fields: false
+          type: ul
+          wrapper_class: item-list
+          class: ''
       row:
         type: 'entity:node'
         options:
@@ -150,6 +157,7 @@ display:
       empty: {  }
       relationships: {  }
       arguments: {  }
+      display_extenders: {  }
     cache_metadata:
       max-age: -1
       contexts:
