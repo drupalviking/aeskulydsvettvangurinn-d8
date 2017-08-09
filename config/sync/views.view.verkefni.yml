@@ -56,6 +56,13 @@ display:
           offset: 0
       style:
         type: html_list
+        options:
+          row_class: 'col-lg-4 col-md-4 col-sm-6 col-xs-12'
+          default_row_class: true
+          uses_fields: false
+          type: ul
+          wrapper_class: item-list
+          class: ''
       row:
         type: 'entity:node'
         options:
@@ -173,6 +180,21 @@ display:
           offset: 0
       defaults:
         pager: false
+        style: false
+        row: false
+      style:
+        type: html_list
+        options:
+          row_class: col-lg-12
+          default_row_class: true
+          uses_fields: false
+          type: ul
+          wrapper_class: item-list
+          class: ''
+      row:
+        type: 'entity:node'
+        options:
+          view_mode: teaser
     cache_metadata:
       max-age: -1
       contexts:
