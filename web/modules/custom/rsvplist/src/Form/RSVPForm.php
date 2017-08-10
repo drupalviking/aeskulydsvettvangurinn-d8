@@ -5,10 +5,12 @@
  */
 namespace Drupal\rsvplist\Form;
 
+use Drupal\Core\Config\ConfigFactoryInterface;
 use Drupal\Core\Database\Database;
 use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Session\AccountProxy;
 use Egulias\EmailValidator\EmailValidatorInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
@@ -32,6 +34,8 @@ class RSVPForm extends FormBase {
    * @var \Egulias\EmailValidator\EmailValidatorInterface
    */
   protected $email_validator;
+
+  protected $current_user;
 
   /**
    * {@inheritdoc}
@@ -85,18 +89,32 @@ class RSVPForm extends FormBase {
    * {@inheritdoc}
    */
   public function submitForm(array &$form, FormStateInterface $form_state) {
-    drupal_set_message($this->t('The form is working'));
+    $user_id = $this->current_user->id();
+    db_insert('rsvplist')
+      ->fields([
+        'name' => $form_state->getValue('name'),
+        'mail' => $form_state->getValue('email'),
+        'nid' => $form_state->getValue('nid'),
+        'uid' => $user_id,
+        'created' => time(),
+      ])
+      ->execute();
+    drupal_set_message($this->t('Thank you for your RSVP,
+     you are on the list for the event.'));
   }
 
   /**
    * RSVPForm constructor.
    * @param \Drupal\Core\Routing\RouteMatchInterface $route_match
    * @param \Egulias\EmailValidator\EmailValidatorInterface $email_validator
+   * @param \Drupal\Core\Session\AccountProxy $current_user
    */
   public function __construct(RouteMatchInterface $route_match,
-                              EmailValidatorInterface $email_validator) {
+                              EmailValidatorInterface $email_validator,
+                              AccountProxy $current_user) {
     $this->routeMatch = $route_match;
     $this->email_validator = $email_validator;
+    $this->current_user = $current_user;
   }
 
   /**
@@ -106,7 +124,8 @@ class RSVPForm extends FormBase {
   public static function create(ContainerInterface $container) {
     return new static(
       $container->get('current_route_match'),
-      $container->get('email.validator')
+      $container->get('email.validator'),
+      $container->get('current_user')
     );
   }
 }
