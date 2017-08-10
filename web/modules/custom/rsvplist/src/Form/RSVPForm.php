@@ -49,8 +49,8 @@ class RSVPForm extends FormBase {
    */
   public function buildForm(array $form, FormStateInterface $form_state) {
     $node = $this->routeMatch->getParameter('node');
-    //$nid = $node->nid->value;
-    $nid = null;
+    $nid = $node->nid->value;
+
     $form['name'] = [
       '#title' => $this->t('Full name'),
       '#type' => 'textfield',

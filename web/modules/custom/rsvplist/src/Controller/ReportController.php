@@ -41,8 +41,8 @@ class ReportController extends ControllerBase {
       attending.'),
     ];
     $headers = [
-      $this->t('Name'),
       $this->t('Event'),
+      $this->t('Name'),
       $this->t('Email'),
     ];
 
