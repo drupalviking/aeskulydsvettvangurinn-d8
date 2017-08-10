@@ -5,12 +5,11 @@
  */
 namespace Drupal\rsvplist\Form;
 
-use Drupal\Core\Config\ConfigFactoryInterface;
-use Drupal\Core\Database\Database;
+use Drupal\Core\Database\Connection;
 use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Routing\RouteMatchInterface;
-use Drupal\Core\Session\AccountProxy;
+use Drupal\Core\Session\AccountProxyInterface;
 use Egulias\EmailValidator\EmailValidatorInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
@@ -22,19 +21,31 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
  */
 class RSVPForm extends FormBase {
   /**
-   * The Route Match
+   * DB connection.
    *
-   * @var \Drupal\Core\Routing\RouteMatchInterface
+   * @var Connection
+   */
+  protected $database;
+
+  /**
+   * Current Route Match
+   *
+   * @var RouteMatchInterface
    */
   protected $routeMatch;
 
   /**
-   * Email validation
+   * Email validation service
    *
-   * @var \Egulias\EmailValidator\EmailValidatorInterface
+   * @var EmailValidatorInterface
    */
   protected $email_validator;
 
+  /**
+   * The current user.
+   *
+   * @var AccountProxyInterface
+   */
   protected $current_user;
 
   /**
@@ -48,8 +59,8 @@ class RSVPForm extends FormBase {
    * {@inheritdoc}
    */
   public function buildForm(array $form, FormStateInterface $form_state) {
+    /** @var \Drupal\node\Entity\Node $node */
     $node = $this->routeMatch->getParameter('node');
-    $nid = $node->nid->value;
 
     $form['name'] = [
       '#title' => $this->t('Full name'),
@@ -71,7 +82,7 @@ class RSVPForm extends FormBase {
     ];
     $form['nid'] = [
       '#type' => 'hidden',
-      '#value' => $nid,
+      '#value' => $node ? $node->id() : null,
     ];
 
     return $form;
@@ -90,7 +101,7 @@ class RSVPForm extends FormBase {
    */
   public function submitForm(array &$form, FormStateInterface $form_state) {
     $user_id = $this->current_user->id();
-    db_insert('rsvplist')
+    $this->database->insert('rsvplist')
       ->fields([
         'name' => $form_state->getValue('name'),
         'mail' => $form_state->getValue('email'),
@@ -105,13 +116,19 @@ class RSVPForm extends FormBase {
 
   /**
    * RSVPForm constructor.
-   * @param \Drupal\Core\Routing\RouteMatchInterface $route_match
-   * @param \Egulias\EmailValidator\EmailValidatorInterface $email_validator
-   * @param \Drupal\Core\Session\AccountProxy $current_user
+   * @param Connection $database
+   *  The database connection service
+   * @param RouteMatchInterface $route_match
+   *  The Current Route Match
+   * @param EmailValidatorInterface $email_validator
+   *  The Email validation service
+   * @param AccountProxyInterface $current_user
+   *  The current user
    */
-  public function __construct(RouteMatchInterface $route_match,
+  public function __construct(Connection $database,
+                              RouteMatchInterface $route_match,
                               EmailValidatorInterface $email_validator,
-                              AccountProxy $current_user) {
+                              AccountProxyInterface $current_user) {
     $this->routeMatch = $route_match;
     $this->email_validator = $email_validator;
     $this->current_user = $current_user;
@@ -123,6 +140,7 @@ class RSVPForm extends FormBase {
    */
   public static function create(ContainerInterface $container) {
     return new static(
+      $container->get('database'),
       $container->get('current_route_match'),
       $container->get('email.validator'),
       $container->get('current_user')

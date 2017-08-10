@@ -6,16 +6,24 @@
 namespace Drupal\rsvplist\Controller;
 
 use Drupal\Core\Controller\ControllerBase;
-use Drupal\Core\Database\Database;
+use Drupal\Core\Database\Connection;
+use Symfony\Component\DependencyInjection\ContainerInterface;
 
 class ReportController extends ControllerBase {
+  /**
+   * DB connection.
+   *
+   * @var Connection
+   */
+  protected $database;
+
   /**
    * Gets all RSVPs for all nodes.
    *
    * @return array
    */
   protected function load() {
-    $select = Database::getConnection()->select('rsvplist', 'r');
+    $select = $this->database->select('rsvplist', 'r');
     // Join the users table so we can get the entry creator's username.
     $select->join('node_field_data', 'n', 'r.nid = n.nid');
     // Select these specific fields for the output
@@ -62,5 +70,15 @@ class ReportController extends ControllerBase {
     $content['#cache']['max-age'] = 0;
 
     return $content;
+  }
+
+  public function __construct(Connection $database) {
+    $this->$database = $database;
+  }
+
+  public static function create(ContainerInterface $container) {
+    return new static(
+      $container->get('database')
+    );
   }
 }
