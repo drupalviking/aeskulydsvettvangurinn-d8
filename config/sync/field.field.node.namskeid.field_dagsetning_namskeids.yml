@@ -1,0 +1,21 @@
+uuid: cd963274-db88-4b65-8030-27ec02f6ac59
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dagsetning_namskeids
+    - node.type.namskeid
+  module:
+    - datetime
+id: node.namskeid.field_dagsetning_namskeids
+field_name: field_dagsetning_namskeids
+entity_type: node
+bundle: namskeid
+label: 'Dagsetning námskeiðs'
+description: 'Dagsetning námskeiðs. Ef námskeiðið spannar fleiri en einn dag, skal skrá allar dags- og tímasetningar hér.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

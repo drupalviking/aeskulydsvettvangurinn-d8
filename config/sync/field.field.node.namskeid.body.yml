@@ -1,0 +1,22 @@
+uuid: 0e0cafcd-70eb-4592-86a2-8e567fff80e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.namskeid
+  module:
+    - text
+id: node.namskeid.body
+field_name: body
+entity_type: node
+bundle: namskeid
+label: Lýsing
+description: 'Lýsing á námskeiðinu'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

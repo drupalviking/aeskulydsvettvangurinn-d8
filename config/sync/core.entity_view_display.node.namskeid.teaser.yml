@@ -1,0 +1,28 @@
+uuid: 474eb9b1-b17f-426f-8714-9782ab57933b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.namskeid.body
+    - node.type.namskeid
+  module:
+    - text
+    - user
+id: node.namskeid.teaser
+targetEntityType: node
+bundle: namskeid
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

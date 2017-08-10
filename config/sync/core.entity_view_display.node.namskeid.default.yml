@@ -1,0 +1,64 @@
+uuid: 72b65774-c9b1-4214-a242-9ec137094480
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.namskeid.body
+    - field.field.node.namskeid.field_dagsetning_namskeids
+    - field.field.node.namskeid.field_mynd
+    - field.field.node.namskeid.field_namskeidshaldari
+    - field.field.node.namskeid.field_stadsetning
+    - node.type.namskeid
+  module:
+    - datetime
+    - text
+    - user
+id: node.namskeid.default
+targetEntityType: node
+bundle: namskeid
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_dagsetning_namskeids:
+    weight: 102
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_mynd:
+    weight: 105
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_namskeidshaldari:
+    weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_stadsetning:
+    weight: 104
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

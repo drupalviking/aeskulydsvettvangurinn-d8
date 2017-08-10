@@ -1,0 +1,28 @@
+uuid: e3124069-5e81-439d-910e-322ea2eb2784
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_namskeidshaldari
+    - node.type.adildafelog
+    - node.type.namskeid
+id: node.namskeid.field_namskeidshaldari
+field_name: field_namskeidshaldari
+entity_type: node
+bundle: namskeid
+label: Námskeiðshaldari
+description: 'Hér er valið það aðildafélag sem heldur námskeiðið.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      adildafelog: adildafelog
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
