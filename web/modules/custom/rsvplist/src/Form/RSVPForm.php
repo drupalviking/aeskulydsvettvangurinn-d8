@@ -129,6 +129,7 @@ class RSVPForm extends FormBase {
                               RouteMatchInterface $route_match,
                               EmailValidatorInterface $email_validator,
                               AccountProxyInterface $current_user) {
+    $this->database = $database;
     $this->routeMatch = $route_match;
     $this->email_validator = $email_validator;
     $this->current_user = $current_user;

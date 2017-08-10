@@ -5,21 +5,16 @@
  */
 namespace Drupal\rsvplist;
 
+use Drupal\Core\Database\Database;
 use Drupal\node\Entity\Node;
-use Symfony\Component\DependencyInjection\ContainerInterface;
-use Drupal\Core\Database\Connection;
 
 class EnablerService {
-  /**
-   * DB connection.
-   *
-   * @var Connection
-   */
-  protected $database;
+  public function __construct() {
+  }
 
   public function setEnabled(Node $node) {
     if(!$this->isEnabled($node)) {
-      $insert = $this->database->insert('rsvplist_enabled');
+      $insert = Database::getConnection()->insert('rsvplist_enabled');
       $insert->fields(['nid'], [$node->id()]);
       $insert->execute();
     }
@@ -29,7 +24,7 @@ class EnablerService {
     if($node->isNew()){
       return FALSE;
     }
-    $select = $this->database->select('rsvplist_enabled', 're');
+    $select = Database::getConnection()->select('rsvplist_enabled', 're');
     $select->fields('re', ['nid']);
     $select->condition('nid', $node->id());
     $results = $select->execute();
@@ -37,18 +32,8 @@ class EnablerService {
   }
 
   public function delEnabled(Node $node) {
-    $delete = $this->database->delete('rsvp_enabled');
+    $delete = Database::getConnection()->delete('rsvp_enabled');
     $delete->condition('nid', $node->id());
     $delete->execute();
-  }
-
-  public function __construct(Connection $database) {
-    $this->$database = $database;
-  }
-
-  public static function create(ContainerInterface $container) {
-    return new static(
-      $container->get('database')
-    );
   }
 }
