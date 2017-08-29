@@ -52,6 +52,7 @@ h2 {
   line-height: 32px;
   letter-spacing: -2px;
   margin-bottom: 20px;
+  color: $primary-blue;
 }
 
 h3 {
@@ -70,4 +71,11 @@ body {
   font-family: "museo-sans";
   font-size: 16px;
   line-height: 20px;
+}
+
+h1.page-header {
+  text-align: center;
+  padding: 50px 0;
+  background-color: $primary-blue;
+  color: whitesmoke;
 }
