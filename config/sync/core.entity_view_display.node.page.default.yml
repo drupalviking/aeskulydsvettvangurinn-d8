@@ -8,8 +8,23 @@ dependencies:
     - field.field.node.page.field_skjol
     - node.type.page
   module:
+    - ds
     - text
     - user
+third_party_settings:
+  ds:
+    layout:
+      id: layout_onecol
+      library: layout_discovery/onecol
+      disable_css: false
+      entity_classes: all_classes
+      settings: {  }
+    regions:
+      content:
+        - body
+        - links
+        - field_mynd
+        - field_skjol
 _core:
   default_config_hash: g1S3_GLaxq4l3I9RIca5Mlz02MxI2KmOquZpHw59akM
 id: node.page.default
@@ -26,21 +41,40 @@ content:
     third_party_settings: {  }
   field_mynd:
     weight: 102
-    label: above
+    label: hidden
     settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
+      view_mode: landscape
+      link: false
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    type: entity_reference_entity_view
     region: content
   field_skjol:
     weight: 103
-    label: above
+    label: hidden
     settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
+      view_mode: document_view
+      link: false
+    third_party_settings:
+      ds:
+        ds_limit: ''
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    type: entity_reference_entity_view
     region: content
   links:
     weight: 101
     region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden: {  }

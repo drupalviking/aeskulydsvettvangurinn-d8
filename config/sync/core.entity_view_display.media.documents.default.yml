@@ -10,6 +10,7 @@ dependencies:
     - image.style.thumbnail
     - media_entity.bundle.documents
   module:
+    - ds
     - file
     - image
 id: media.documents.default
@@ -29,8 +30,15 @@ content:
     label: hidden
     settings:
       image_style: thumbnail
-      image_link: file
-    third_party_settings: {  }
+      image_link: ''
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
     type: image
     region: content
 hidden:
