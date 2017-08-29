@@ -5,6 +5,7 @@ dependencies:
   config:
     - page_manager.page.front_page
     - views.view.adildafelog
+    - views.view.vidburdir
   module:
     - panels
     - views
@@ -23,6 +24,17 @@ variant_settings:
       region: middle
       weight: 0
       uuid: a01fa713-86ea-4cd6-bdeb-a70c1d6307d7
+      context_mapping: {  }
+    e888b8f5-9ba3-4eca-adfe-f40f01cad6d0:
+      id: 'views_block:vidburdir-block_1'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: first_above
+      weight: 0
+      uuid: e888b8f5-9ba3-4eca-adfe-f40f01cad6d0
       context_mapping: {  }
   id: panels_variant
   uuid: d0e6b60d-2208-40f7-b197-cea251ee3be1

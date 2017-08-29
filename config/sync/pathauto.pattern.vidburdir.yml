@@ -1,22 +1,22 @@
-uuid: ce42f57d-293a-4519-8bec-e5b02d385147
+uuid: ba061db1-fed7-4271-9c5e-d3b325025412
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: almennar_sidur
-label: 'Almennar síður'
+id: vidburdir
+label: Viðburðir
 type: 'canonical_entities:node'
-pattern: '[node:title]'
+pattern: 'vidburdur/[node:title]'
 selection_criteria:
-  5d502ec2-4fab-4e05-ae11-1749983e3ed7:
+  7595f220-1285-4161-b1cd-e6851888429c:
     id: node_type
     bundles:
-      page: page
+      vidburdir: vidburdir
     negate: false
     context_mapping:
       node: node
-    uuid: 5d502ec2-4fab-4e05-ae11-1749983e3ed7
+    uuid: 7595f220-1285-4161-b1cd-e6851888429c
 selection_logic: and
-weight: 0
+weight: -5
 relationships: {  }
