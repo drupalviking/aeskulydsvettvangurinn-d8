@@ -17,3 +17,10 @@ bootstrap-scripts:
     bootstrap/assets/javascripts/bootstrap/scrollspy.js: {}
     bootstrap/assets/javascripts/bootstrap/tab.js: {}
     bootstrap/assets/javascripts/bootstrap/transition.js: {}
+
+typekit:
+  version: 1.x
+  header: true
+  js:
+    //use.typekit.net/shh1ixx.js: { every_page: true }
+    js/typekit.js: { every_page: true }

@@ -22,3 +22,4 @@ regions:
 libraries:
   - 'aev/global-styling'
   - 'aev/bootstrap-scripts'
+  - 'aev/typekit'
