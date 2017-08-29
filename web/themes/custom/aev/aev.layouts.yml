@@ -1,0 +1,11 @@
+events:
+  label: Events
+  category: AEV layouts
+  template: templates/events
+  regions:
+    top:
+      label: Top
+    location:
+      label: Location information
+    text:
+      label: Text fields
