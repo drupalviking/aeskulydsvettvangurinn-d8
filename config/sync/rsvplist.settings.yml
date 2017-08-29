@@ -1,4 +1,5 @@
 allowed_types:
   - namskeid
+  - vidburdir
 _core:
   default_config_hash: ZXJmCNTRwuSHmUBMLtp8VaYKGUyZizEU-e9DiUoOXtk

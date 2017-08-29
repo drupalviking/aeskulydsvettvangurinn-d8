@@ -20,7 +20,7 @@ variant_settings:
       label_display: visible
       views_label: ''
       items_per_page: none
-      region: content
+      region: middle
       weight: 0
       uuid: a01fa713-86ea-4cd6-bdeb-a70c1d6307d7
       context_mapping: {  }
@@ -28,7 +28,7 @@ variant_settings:
   uuid: d0e6b60d-2208-40f7-b197-cea251ee3be1
   label: null
   weight: 0
-  layout: layout_onecol
+  layout: layout_twocol_bricks
   layout_settings: {  }
   page_title: ''
   storage_type: page_manager
