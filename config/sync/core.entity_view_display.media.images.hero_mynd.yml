@@ -1,0 +1,44 @@
+uuid: 262909e9-beca-416f-942b-4f20320ea862
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.hero_mynd
+    - field.field.media.images.field_height
+    - field.field.media.images.field_image
+    - field.field.media.images.field_mime
+    - field.field.media.images.field_width
+    - image.style.hero
+    - media_entity.bundle.images
+  module:
+    - ds
+    - image
+id: media.images.hero_mynd
+targetEntityType: media
+bundle: images
+mode: hero_mynd
+content:
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: hero
+      image_link: ''
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    type: image
+    region: content
+hidden:
+  created: true
+  field_height: true
+  field_mime: true
+  field_width: true
+  name: true
+  thumbnail: true
+  uid: true

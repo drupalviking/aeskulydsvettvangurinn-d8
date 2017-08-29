@@ -5,6 +5,7 @@ dependencies:
   config:
     - entity_browser.browser.document_browser
     - field.field.node.verkefni.body
+    - field.field.node.verkefni.field_hero_mynd
     - field.field.node.verkefni.field_mynd
     - field.field.node.verkefni.field_skjol
     - node.type.verkefni
@@ -32,6 +33,15 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_hero_mynd:
+    weight: 34
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
   field_mynd:
     weight: 32
     settings:
