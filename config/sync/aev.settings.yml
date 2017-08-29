@@ -1,4 +1,3 @@
-cdn_provider: jsdelivr
 _core:
   default_config_hash: _5qrDuRmWmRVjW00si3U1s1NrgrocA4N653EYGRfgEE
 favicon:
@@ -15,9 +14,11 @@ logo:
   use_default: false
 table_responsive: '-1'
 table: ''
+breadcrumb_home: 1
+navbar_position: fixed-top
 features:
   comment_user_picture: true
   comment_user_verification: true
   favicon: true
   node_user_picture: true
-navbar_position: fixed-top
+cdn_provider: ''
