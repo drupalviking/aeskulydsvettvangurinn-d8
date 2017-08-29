@@ -17,17 +17,18 @@ dependencies:
 third_party_settings:
   ds:
     layout:
-      id: layout_onecol
-      library: layout_discovery/onecol
+      id: events
+      library: null
       disable_css: false
       entity_classes: all_classes
       settings: {  }
     regions:
-      content:
+      top:
         - field_mynd
-        - links
+      location:
         - field_dagsetning
         - field_stadsetning
+      text:
         - body
         - field_dagskra
 id: node.vidburdir.default
@@ -38,16 +39,17 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 4
+    weight: 3
     settings: {  }
     third_party_settings: {  }
-    region: content
+    region: text
   field_dagsetning:
-    weight: 2
+    weight: 1
     label: inline
     settings:
-      timezone_override: ''
-      format_type: long
+      future_format: '@interval hence'
+      past_format: '@interval ago'
+      granularity: 2
     third_party_settings:
       ds:
         ft:
@@ -56,15 +58,15 @@ content:
             lb: ''
             lb-col: false
             classes: {  }
-    type: datetime_default
-    region: content
+    type: datetime_time_ago
+    region: location
   field_dagskra:
-    weight: 5
+    weight: 4
     label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
-    region: content
+    region: text
   field_mynd:
     weight: 0
     label: hidden
@@ -80,18 +82,14 @@ content:
             lb-col: false
             classes: {  }
     type: entity_reference_entity_view
-    region: content
+    region: top
   field_stadsetning:
-    weight: 3
+    weight: 2
     label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
-    region: content
-  links:
-    weight: 1
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-hidden: {  }
+    region: location
+hidden:
+  links: true

@@ -2,9 +2,9 @@ _core:
   default_config_hash: _5qrDuRmWmRVjW00si3U1s1NrgrocA4N653EYGRfgEE
 favicon:
   mimetype: image/vnd.microsoft.icon
-  path: ''
+  path: themes/custom/aev/images/icons/favicon.ico
   url: 'http://aev-d8.isproject.is/themes/custom/aev/favicon.ico'
-  use_default: true
+  use_default: false
 schemas:
   bootstrap: 8000
   aev: 8000
