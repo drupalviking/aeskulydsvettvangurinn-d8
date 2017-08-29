@@ -54,13 +54,6 @@ body {
   @media #{$wide} {
     max-width: (($container-lg - $grid-gutter-width));
   }
-
-  background-color: $primary-red;
-  border-color: $secondary-red;
-
-  .navbar-nav>li>a{
-    color: white;
-  }
 }
 
 // Branding.
@@ -71,6 +64,32 @@ body {
   @media #{$grid-breakpoint} {
     margin-right: 0;
     padding-left: 0;
+  }
+}
+
+.navbar-fixed-top {
+  background-color: $primary-red;
+  border-color: $secondary-red;
+  font-weight: 900;
+
+  .navbar-nav>li,
+  .navbar-nav>li>a {
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    -webkit-transition-duration: 0.7s;
+    transition-duration: 0.7s;
+  }
+
+
+  .navbar-nav>li>a{
+    color: whitesmoke;
+  }
+
+  .navbar-nav>li:hover {
+    background-color: whitesmoke;
+    & a {
+      color: $primary-red;
+    }
   }
 }
 

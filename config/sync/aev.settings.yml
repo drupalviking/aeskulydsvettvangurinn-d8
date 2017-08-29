@@ -1,20 +1,23 @@
-cdn_provider: ''
+cdn_provider: jsdelivr
 _core:
   default_config_hash: _5qrDuRmWmRVjW00si3U1s1NrgrocA4N653EYGRfgEE
 favicon:
   mimetype: image/vnd.microsoft.icon
   path: ''
-  url: 'http://aeskulydsvettvangurinn-d8.dd:8083/themes/contrib/bootstrap/favicon.ico'
+  url: 'http://aeskulydsvettvangurinn-d8.dd:8083/themes/custom/aev/favicon.ico'
   use_default: true
+schemas:
+  bootstrap: 8000
+  aev: 8000
+logo:
+  path: themes/custom/aev/images/logos/aev-long-color.png
+  url: ''
+  use_default: false
+table_responsive: '-1'
+table: ''
 features:
   comment_user_picture: true
   comment_user_verification: true
   favicon: true
   node_user_picture: true
-logo:
-  path: ''
-  url: ''
-  use_default: true
-schemas:
-  bootstrap: 8000
-  aev: 8000
+navbar_position: fixed-top
