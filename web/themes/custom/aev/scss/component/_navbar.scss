@@ -54,6 +54,13 @@ body {
   @media #{$wide} {
     max-width: (($container-lg - $grid-gutter-width));
   }
+
+  background-color: $primary-red;
+  border-color: $secondary-red;
+
+  .navbar-nav>li>a{
+    color: white;
+  }
 }
 
 // Branding.

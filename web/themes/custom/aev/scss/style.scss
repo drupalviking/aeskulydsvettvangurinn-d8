@@ -7,6 +7,9 @@
 // Base-theme overrides.
 @import 'overrides';
 
+// Fonts
+@import '../scss/fonts/aev-morebi.css';
+
 @import 'component/lists';
 @import 'component/basic-pages';
 @import 'component/starfsfolk';
