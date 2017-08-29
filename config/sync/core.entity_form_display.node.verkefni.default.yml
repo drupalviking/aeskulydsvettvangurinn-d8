@@ -20,7 +20,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 31
+    weight: 6
     settings:
       rows: 9
       summary_rows: 3
@@ -29,21 +29,26 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 10
+    weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }
   field_hero_mynd:
-    weight: 34
+    weight: 7
     settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
+      entity_browser: media_browser
+      field_widget_display: rendered_entity
+      field_widget_edit: true
+      field_widget_remove: true
+      selection_mode: selection_append
+      field_widget_display_settings:
+        view_mode: logo_max_height_100px
+      open: false
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: entity_browser_entity_reference
     region: content
   field_mynd:
-    weight: 32
+    weight: 8
     settings:
       entity_browser: media_browser
       field_widget_display: rendered_entity
@@ -57,7 +62,7 @@ content:
     type: entity_browser_entity_reference
     region: content
   field_skjol:
-    weight: 33
+    weight: 9
     settings:
       entity_browser: document_browser
       field_widget_display: label
@@ -71,7 +76,7 @@ content:
     region: content
   path:
     type: path
-    weight: 30
+    weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -79,19 +84,19 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 15
+    weight: 3
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 16
+    weight: 4
     region: content
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: -5
+    weight: 0
     region: content
     settings:
       size: 60
@@ -99,7 +104,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 5
+    weight: 1
     settings:
       match_operator: CONTAINS
       size: 60

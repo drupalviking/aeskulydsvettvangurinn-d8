@@ -32,7 +32,7 @@ class EnablerService {
   }
 
   public function delEnabled(Node $node) {
-    $delete = Database::getConnection()->delete('rsvp_enabled');
+    $delete = Database::getConnection()->delete('rsvplist_enabled');
     $delete->condition('nid', $node->id());
     $delete->execute();
   }
