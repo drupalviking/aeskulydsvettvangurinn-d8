@@ -1,0 +1,28 @@
+uuid: b6e11718-50cb-4400-a8b2-52acd6c3884e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.vidburdir.body
+    - node.type.vidburdir
+  module:
+    - text
+    - user
+id: node.vidburdir.teaser
+targetEntityType: node
+bundle: vidburdir
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

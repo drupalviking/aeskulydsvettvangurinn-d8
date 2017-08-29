@@ -1,0 +1,16 @@
+uuid: 4bcc0323-d2de-4975-b5df-305a6cb2d1a9
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: hero_mynd
+label: 'Hero mynd'
+effects:
+  1515ec73-94d5-41ce-b1a9-a1352596aef3:
+    uuid: 1515ec73-94d5-41ce-b1a9-a1352596aef3
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1140
+      height: 400

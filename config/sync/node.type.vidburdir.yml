@@ -1,0 +1,18 @@
+uuid: 9aa2f4f5-ad02-46af-ad2b-7d2f3b694f2e
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Viðburðir
+type: vidburdir
+description: 'Hér eru skráðir viðburðir sem eru aðrir en námskeið (t.d. ráðstefnur ofl.)'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

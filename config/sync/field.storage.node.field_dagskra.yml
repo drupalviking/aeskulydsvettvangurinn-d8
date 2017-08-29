@@ -1,0 +1,19 @@
+uuid: fe845655-5c1b-492c-b00d-75b14d597ddd
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_dagskra
+field_name: field_dagskra
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

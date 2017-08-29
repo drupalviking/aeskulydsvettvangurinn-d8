@@ -1,0 +1,22 @@
+uuid: a1a4a535-d9c2-4fc7-a2bb-6097edc10da6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.vidburdir
+  module:
+    - text
+id: node.vidburdir.body
+field_name: body
+entity_type: node
+bundle: vidburdir
+label: Lýsing
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

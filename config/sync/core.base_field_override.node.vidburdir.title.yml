@@ -1,0 +1,18 @@
+uuid: a9179745-f71e-47a0-9da0-fc192d580ebb
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.vidburdir
+id: node.vidburdir.title
+field_name: title
+entity_type: node
+bundle: vidburdir
+label: Titill
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

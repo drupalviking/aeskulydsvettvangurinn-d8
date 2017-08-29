@@ -1,0 +1,97 @@
+uuid: c51a7eb7-31ae-471c-a7d7-b4157491c620
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.vidburdir.body
+    - field.field.node.vidburdir.field_dagsetning
+    - field.field.node.vidburdir.field_dagskra
+    - field.field.node.vidburdir.field_mynd
+    - field.field.node.vidburdir.field_stadsetning
+    - node.type.vidburdir
+  module:
+    - datetime
+    - ds
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: layout_onecol
+      library: layout_discovery/onecol
+      disable_css: false
+      entity_classes: all_classes
+      settings: {  }
+    regions:
+      content:
+        - field_mynd
+        - links
+        - field_dagsetning
+        - field_stadsetning
+        - body
+        - field_dagskra
+id: node.vidburdir.default
+targetEntityType: node
+bundle: vidburdir
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_dagsetning:
+    weight: 2
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: long
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    type: datetime_default
+    region: content
+  field_dagskra:
+    weight: 5
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_mynd:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: hero_mynd
+      link: false
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_stadsetning:
+    weight: 3
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

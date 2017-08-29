@@ -1,0 +1,10 @@
+uuid: 4f6f85bf-e3b5-4891-a444-f8dc0ec97b39
+langcode: en
+status: true
+dependencies:
+  module:
+    - media_entity
+id: media.hero_mynd
+label: 'Hero mynd'
+targetEntityType: media
+cache: true

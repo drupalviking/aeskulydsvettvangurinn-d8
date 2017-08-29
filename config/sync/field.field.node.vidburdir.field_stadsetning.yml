@@ -1,0 +1,19 @@
+uuid: 78ea176c-c997-49d2-8210-e3591d7b391d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_stadsetning
+    - node.type.vidburdir
+id: node.vidburdir.field_stadsetning
+field_name: field_stadsetning
+entity_type: node
+bundle: vidburdir
+label: Staðsetning
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

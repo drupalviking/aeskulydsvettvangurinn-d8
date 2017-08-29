@@ -1,0 +1,21 @@
+uuid: fe03db49-3618-4e1e-aff9-3c18e50f9f6d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dagskra
+    - node.type.vidburdir
+  module:
+    - text
+id: node.vidburdir.field_dagskra
+field_name: field_dagskra
+entity_type: node
+bundle: vidburdir
+label: Dagskrá
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,21 @@
+uuid: 3bb9833a-8ed4-4da9-af28-66d2a607b5d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dagsetning
+    - node.type.vidburdir
+  module:
+    - datetime
+id: node.vidburdir.field_dagsetning
+field_name: field_dagsetning
+entity_type: node
+bundle: vidburdir
+label: Dagsetning
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime
