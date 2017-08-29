@@ -38,9 +38,9 @@ third_party_settings:
         label: hidden
         formatter: default
         settings:
+          link: true
           wrapper: h2
           class: cta-title
-          link: false
         ft:
           id: default
           settings:
