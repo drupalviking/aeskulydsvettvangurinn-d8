@@ -70,13 +70,21 @@ content:
       timezone_override: ''
     third_party_settings: {  }
   field_mynd:
-    type: entity_reference_label
+    type: entity_reference_entity_view
     weight: 0
     region: content
-    label: above
+    label: hidden
     settings:
-      link: true
-    third_party_settings: {  }
+      view_mode: hero_mynd
+      link: false
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
   field_stadsetning:
     type: string
     weight: 3
