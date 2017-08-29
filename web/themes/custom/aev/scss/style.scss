@@ -8,9 +8,10 @@
 @import 'overrides';
 
 // Fonts
-@import '../scss/fonts/aev-morebi.css';
+@import 'component/fonts';
 
 @import 'component/lists';
+@import 'component/front-page';
 @import 'component/basic-pages';
 @import 'component/starfsfolk';
 @import 'component/verkefni';
