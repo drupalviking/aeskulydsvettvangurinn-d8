@@ -1,0 +1,22 @@
+uuid: 4ba654d5-527a-4a54-a9f3-a2e2b44ddea4
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: namskeid
+label: Námskeið
+type: 'canonical_entities:node'
+pattern: 'namskeid/[node:title]'
+selection_criteria:
+  6560a575-5b05-4867-8657-c852a49ca839:
+    id: node_type
+    bundles:
+      namskeid: namskeid
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 6560a575-5b05-4867-8657-c852a49ca839
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,22 @@
+uuid: 08f698db-8464-44cd-a112-951435e06985
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: verkefni
+label: Verkefni
+type: 'canonical_entities:node'
+pattern: 'verkefni/[node:title]'
+selection_criteria:
+  9418faba-b003-4393-ac04-03cc83e63d89:
+    id: node_type
+    bundles:
+      verkefni: verkefni
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 9418faba-b003-4393-ac04-03cc83e63d89
+selection_logic: and
+weight: -5
+relationships: {  }

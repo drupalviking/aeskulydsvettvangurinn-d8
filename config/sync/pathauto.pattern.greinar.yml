@@ -1,0 +1,22 @@
+uuid: 479d4e06-d197-4d71-ab2b-f86902e5e6f4
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: greinar
+label: Greinar
+type: 'canonical_entities:node'
+pattern: 'greinar/[node:title]'
+selection_criteria:
+  1d3743c7-c6d5-41f4-a814-67453bcf8904:
+    id: node_type
+    bundles:
+      article: article
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 1d3743c7-c6d5-41f4-a814-67453bcf8904
+selection_logic: and
+weight: -5
+relationships: {  }

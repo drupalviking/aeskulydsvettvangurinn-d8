@@ -1,0 +1,14 @@
+uuid: ce42f57d-293a-4519-8bec-e5b02d385147
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: almennar_sidur
+label: 'Almennar síður'
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria: {  }
+selection_logic: and
+weight: 0
+relationships: {  }
