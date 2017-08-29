@@ -85,7 +85,8 @@ body {
     color: whitesmoke;
   }
 
-  .navbar-nav>li:hover {
+  .navbar-nav>li:hover,
+  .navbar-nav>.active {
     background-color: whitesmoke;
     & a {
       color: $primary-red;
@@ -95,4 +96,15 @@ body {
 
 a.logo {
   margin-bottom: 20px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu>.active>a,
+.dropdown-menu>.active>a:hover,
+.dropdown-menu>.active>a:focus {
+  background-color: $primary-red;
+  color: whitesmoke !important;
 }
