@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.node.verkefni.body
-    - field.field.node.verkefni.field_hero_mynd
     - field.field.node.verkefni.field_mynd
     - field.field.node.verkefni.field_skjol
     - node.type.verkefni
@@ -23,7 +22,6 @@ third_party_settings:
     regions:
       content:
         - links
-        - field_hero_mynd
         - field_mynd
         - body
         - field_skjol
@@ -35,28 +33,12 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 3
+    weight: 2
     settings: {  }
     third_party_settings: {  }
     region: content
-  field_hero_mynd:
-    weight: 1
-    label: hidden
-    settings:
-      view_mode: hero_mynd
-      link: false
-    third_party_settings:
-      ds:
-        ft:
-          id: default
-          settings:
-            lb: ''
-            lb-col: false
-            classes: {  }
-    type: entity_reference_entity_view
-    region: content
   field_mynd:
-    weight: 2
+    weight: 1
     label: hidden
     settings:
       view_mode: portrait
@@ -72,7 +54,7 @@ content:
     type: entity_reference_entity_view
     region: content
   field_skjol:
-    weight: 4
+    weight: 3
     label: hidden
     settings:
       view_mode: document_view

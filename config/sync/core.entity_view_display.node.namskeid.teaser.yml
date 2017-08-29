@@ -25,4 +25,8 @@ content:
   links:
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_dagsetning_namskeids: true
+  field_mynd: true
+  field_namskeidshaldari: true
+  field_stadsetning: true

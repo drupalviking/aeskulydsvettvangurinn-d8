@@ -3,7 +3,7 @@ _core:
 favicon:
   mimetype: image/vnd.microsoft.icon
   path: ''
-  url: 'http://aeskulydsvettvangurinn-d8.dd:8083/themes/custom/aev/favicon.ico'
+  url: 'http://aev-d8.isproject.is/themes/custom/aev/favicon.ico'
   use_default: true
 schemas:
   bootstrap: 8000
@@ -16,9 +16,10 @@ table_responsive: '-1'
 table: ''
 breadcrumb_home: 1
 navbar_position: fixed-top
+cdn_provider: ''
 features:
   comment_user_picture: true
   comment_user_verification: true
   favicon: true
   node_user_picture: true
-cdn_provider: ''
+breadcrumb: '0'
