@@ -5,6 +5,10 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.namskeid.body
+    - field.field.node.namskeid.field_dagsetning_namskeids
+    - field.field.node.namskeid.field_mynd
+    - field.field.node.namskeid.field_namskeidshaldari
+    - field.field.node.namskeid.field_stadsetning
     - node.type.namskeid
   module:
     - text
@@ -30,3 +34,4 @@ hidden:
   field_mynd: true
   field_namskeidshaldari: true
   field_stadsetning: true
+  langcode: true

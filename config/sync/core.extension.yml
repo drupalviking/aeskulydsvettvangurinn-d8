@@ -12,6 +12,7 @@ module:
   color: 0
   comment: 0
   config: 0
+  config_translation: 0
   contact: 0
   contextual: 0
   crop: 0
@@ -36,9 +37,11 @@ module:
   history: 0
   image: 0
   kint: 0
+  language: 0
   layout_discovery: 0
   libraries: 0
   link: 0
+  locale: 0
   media_entity: 0
   media_entity_document: 0
   media_entity_image: 0
@@ -78,6 +81,7 @@ module:
   menu_link_content: 1
   pathauto: 1
   ds_extras: 2
+  content_translation: 10
   views: 10
   paragraphs: 11
   standard: 1000

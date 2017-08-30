@@ -71,3 +71,4 @@ content:
     third_party_settings: {  }
 hidden:
   field_skjol: true
+  langcode: true

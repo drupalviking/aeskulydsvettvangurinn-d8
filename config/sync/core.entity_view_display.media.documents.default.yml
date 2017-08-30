@@ -45,6 +45,7 @@ hidden:
   created: true
   field_mime: true
   field_size: true
+  langcode: true
   name: true
   thumbnail: true
   uid: true

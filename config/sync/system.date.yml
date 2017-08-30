@@ -1,6 +1,6 @@
 country:
-  default: ''
-first_day: 0
+  default: IS
+first_day: 1
 timezone:
   default: UTC
   user:

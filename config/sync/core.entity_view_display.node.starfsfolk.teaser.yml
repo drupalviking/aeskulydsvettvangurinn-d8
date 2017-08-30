@@ -43,4 +43,5 @@ content:
     third_party_settings: {  }
 hidden:
   field_flokkun: true
+  langcode: true
   links: true

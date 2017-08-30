@@ -31,6 +31,7 @@ hidden:
   field_height: true
   field_mime: true
   field_width: true
+  langcode: true
   name: true
   thumbnail: true
   uid: true

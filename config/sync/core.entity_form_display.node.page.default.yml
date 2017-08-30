@@ -61,6 +61,12 @@ content:
     third_party_settings: {  }
     type: entity_browser_entity_reference
     region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   path:
     type: path
     weight: 30

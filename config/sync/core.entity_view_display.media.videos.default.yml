@@ -31,6 +31,7 @@ hidden:
   field_video_id: true
   field_video_source_human_name: true
   field_video_source_machine_name: true
+  langcode: true
   name: true
   thumbnail: true
   uid: true

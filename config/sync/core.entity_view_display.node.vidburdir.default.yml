@@ -154,4 +154,5 @@ content:
     type: string
     region: location
 hidden:
+  langcode: true
   links: true
