@@ -7,5 +7,7 @@ _core:
 id: node
 label: Content
 tags:
+  image_src: '[node:field_mynd:entity:original]'
   title: '[node:title] | [site:name]'
   description: '[node:summary]'
+  referrer: origin
