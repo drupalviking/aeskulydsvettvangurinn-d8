@@ -151,7 +151,7 @@ display:
           expose:
             label: ''
           granularity: second
-      title: Aðildafélög
+      title: Aðildarfélög
       header: {  }
       footer: {  }
       empty: {  }
