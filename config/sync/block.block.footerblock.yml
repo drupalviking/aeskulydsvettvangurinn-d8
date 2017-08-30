@@ -1,0 +1,25 @@
+uuid: 345a3ce3-eaac-4656-aff6-1e378403a4b9
+langcode: is
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:f0b4feb7-134f-46d7-ac3d-df12a0d92352'
+  module:
+    - block_content
+  theme:
+    - aev
+id: footerblock
+theme: aev
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:f0b4feb7-134f-46d7-ac3d-df12a0d92352'
+settings:
+  id: 'block_content:f0b4feb7-134f-46d7-ac3d-df12a0d92352'
+  label: 'Footer block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
