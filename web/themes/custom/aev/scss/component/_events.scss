@@ -12,13 +12,21 @@
   }
 
   .texts {
-    h2 {
-      color: whitesmoke;
-    }
     .schedule {
+      h2 {
+        color: whitesmoke;
+      }
+
       background-color: $secondary-purple;
       color: whitesmoke;
       padding: 20px;
     }
   }
+}
+
+.rsvplist-signup-form {
+  background-color: $primary-green;
+  color: whitesmoke;
+  padding: 20px;
+  margin-bottom: 30px;
 }
