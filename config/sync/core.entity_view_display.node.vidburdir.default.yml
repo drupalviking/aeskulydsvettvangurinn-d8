@@ -30,6 +30,7 @@ third_party_settings:
         - field_stadsetning
       text:
         - body
+      schedule:
         - field_dagskra
 id: node.vidburdir.default
 targetEntityType: node
@@ -64,9 +65,37 @@ content:
     weight: 4
     label: above
     settings: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            prefix: ''
+            lbw: true
+            lbw-el: h2
+            lbw-cl: event
+            lbw-at: ''
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            suffix: ''
+            lb-col: false
+            ow: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-def-at: false
+            fi: false
+            fi-def-at: false
     type: text_default
-    region: text
+    region: schedule
   field_mynd:
     weight: 0
     label: hidden

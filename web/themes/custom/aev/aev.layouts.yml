@@ -9,3 +9,5 @@ events:
       label: Location information
     text:
       label: Text fields
+    schedule:
+      label: Event schedule
