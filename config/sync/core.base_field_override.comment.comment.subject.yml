@@ -1,0 +1,18 @@
+uuid: 44f54a6f-6079-43ee-b8f5-7858639a97aa
+langcode: is
+status: true
+dependencies:
+  config:
+    - comment.type.comment
+id: comment.comment.subject
+field_name: subject
+entity_type: comment
+bundle: comment
+label: Viðfangsefni
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

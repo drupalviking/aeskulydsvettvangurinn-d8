@@ -1,0 +1,11 @@
+uuid: 881a0828-dd25-469f-9278-083ebe4e8a52
+langcode: is
+status: true
+dependencies:
+  config:
+    - node.type.adildafelog
+id: node.adildafelog
+target_entity_type_id: node
+target_bundle: adildafelog
+default_langcode: site_default
+language_alterable: false

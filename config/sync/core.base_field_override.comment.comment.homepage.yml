@@ -1,0 +1,18 @@
+uuid: f7bb9e7b-4220-4aa3-aeb9-d62f5cb35102
+langcode: is
+status: true
+dependencies:
+  config:
+    - comment.type.comment
+id: comment.comment.homepage
+field_name: homepage
+entity_type: comment
+bundle: comment
+label: Heimasíða
+description: 'The comment author''s home page address.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: uri

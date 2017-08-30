@@ -1,0 +1,11 @@
+uuid: acca94b1-c4bf-46fd-8f99-8b83639801b0
+langcode: is
+status: true
+dependencies:
+  config:
+    - node.type.verkefni
+id: node.verkefni
+target_entity_type_id: node
+target_bundle: verkefni
+default_langcode: site_default
+language_alterable: false

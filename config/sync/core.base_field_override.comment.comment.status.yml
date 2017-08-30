@@ -1,0 +1,22 @@
+uuid: 3fd48bbb-db57-48d6-8b3d-85c645cb82df
+langcode: is
+status: true
+dependencies:
+  config:
+    - comment.type.comment
+id: comment.comment.status
+field_name: status
+entity_type: comment
+bundle: comment
+label: Birtingarstaða
+description: 'A boolean indicating the published state.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: 'Drupal\comment\Entity\Comment::getDefaultStatus'
+settings:
+  on_label: Á
+  off_label: 'Off'
+field_type: boolean

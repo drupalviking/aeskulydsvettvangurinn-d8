@@ -1,0 +1,11 @@
+uuid: 47631044-7543-4adc-83a1-8459a46aaf19
+langcode: is
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tegundir_starfsfolks
+id: taxonomy_term.tegundir_starfsfolks
+target_entity_type_id: taxonomy_term
+target_bundle: tegundir_starfsfolks
+default_langcode: site_default
+language_alterable: false

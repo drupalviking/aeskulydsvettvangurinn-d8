@@ -1,0 +1,11 @@
+uuid: d232ea2e-5678-49aa-8641-730ca3ddbf52
+langcode: is
+status: true
+dependencies:
+  config:
+    - node.type.vidburdir
+id: node.vidburdir
+target_entity_type_id: node
+target_bundle: vidburdir
+default_langcode: site_default
+language_alterable: false

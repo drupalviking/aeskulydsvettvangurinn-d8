@@ -1,0 +1,11 @@
+uuid: 0264b49c-aaf5-4452-98e9-671ea7266e33
+langcode: is
+status: true
+dependencies:
+  config:
+    - node.type.namskeid
+id: node.namskeid
+target_entity_type_id: node
+target_bundle: namskeid
+default_langcode: site_default
+language_alterable: false

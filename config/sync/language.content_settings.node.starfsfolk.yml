@@ -1,0 +1,11 @@
+uuid: 20b12683-e51e-45d6-b8e6-089bca78f7d8
+langcode: is
+status: true
+dependencies:
+  config:
+    - node.type.starfsfolk
+id: node.starfsfolk
+target_entity_type_id: node
+target_bundle: starfsfolk
+default_langcode: site_default
+language_alterable: false
