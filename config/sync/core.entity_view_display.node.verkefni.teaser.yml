@@ -10,7 +10,6 @@ dependencies:
     - node.type.verkefni
   module:
     - ds
-    - text
     - user
 third_party_settings:
   ds:
@@ -24,9 +23,13 @@ third_party_settings:
       content:
         - node_title
         - field_mynd
-        - body
-        - links
+        - node_link
     fields:
+      node_link:
+        plugin_id: node_link
+        weight: 2
+        label: hidden
+        formatter: default
       node_title:
         plugin_id: node_title
         weight: 0
@@ -47,14 +50,6 @@ targetEntityType: node
 bundle: verkefni
 mode: teaser
 content:
-  body:
-    label: hidden
-    type: text_summary_or_trimmed
-    weight: 2
-    settings:
-      trim_length: 100
-    third_party_settings: {  }
-    region: content
   field_mynd:
     type: entity_reference_entity_view
     weight: 1
@@ -64,11 +59,8 @@ content:
       view_mode: poster_small
       link: false
     third_party_settings: {  }
-  links:
-    weight: 3
-    region: content
-    settings: {  }
-    third_party_settings: {  }
 hidden:
+  body: true
   field_skjol: true
   langcode: true
+  links: true

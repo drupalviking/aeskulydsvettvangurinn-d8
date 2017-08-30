@@ -1,4 +1,4 @@
-.node-readmore {
+.field--name-node-link {
   display: inline-block;
   margin-bottom: 0;
   font-weight: normal;
@@ -28,13 +28,19 @@
   }
 }
 
-.node-readmore:hover {
+.field--name-node-link:hover {
   background: white;
   border-color: $primary-blue;
 
   a{
     color: $primary-blue;
     text-decoration: none;
+  }
+}
+
+.fp-sidebar-right {
+  img {
+    margin-bottom: 10px;
   }
 }
 

@@ -32,8 +32,13 @@ third_party_settings:
         - field_stadsetning
       text:
         - body
-        - links
+        - node_link
     fields:
+      node_link:
+        plugin_id: node_link
+        weight: 5
+        label: hidden
+        formatter: default
       node_title:
         plugin_id: node_title
         weight: 1
@@ -109,11 +114,7 @@ content:
             lb: Hvar
             lb-col: true
             classes: {  }
-  links:
-    weight: 5
-    region: text
-    settings: {  }
-    third_party_settings: {  }
 hidden:
   field_dagskra: true
   langcode: true
+  links: true
