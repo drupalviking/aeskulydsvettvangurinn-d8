@@ -34,8 +34,14 @@ third_party_settings:
         formatter: default
         settings:
           link: true
-          wrapper: h2
+          wrapper: h3
           class: ''
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
 id: node.verkefni.teaser
 targetEntityType: node
 bundle: verkefni

@@ -18,17 +18,19 @@ dependencies:
 third_party_settings:
   ds:
     layout:
-      id: layout_onecol
-      library: layout_discovery/onecol
+      id: events_teaser
+      library: null
       disable_css: false
       entity_classes: all_classes
       settings: {  }
     regions:
-      content:
+      top:
         - field_mynd
         - node_title
+      location:
         - field_dagsetning
         - field_stadsetning
+      text:
         - body
         - links
     fields:
@@ -39,7 +41,7 @@ third_party_settings:
         formatter: default
         settings:
           link: true
-          wrapper: h2
+          wrapper: h3
           class: cta-title
         ft:
           id: default
@@ -59,20 +61,27 @@ content:
     settings:
       trim_length: 600
     third_party_settings: {  }
-    region: content
+    region: text
   field_dagsetning:
     type: datetime_default
     weight: 2
-    region: content
+    region: location
     label: inline
     settings:
-      format_type: medium
-      timezone_override: ''
-    third_party_settings: {  }
+      timezone_override: Europe/London
+      format_type: long
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: Hvenær
+            lb-col: true
+            classes: {  }
   field_mynd:
     type: entity_reference_entity_view
     weight: 0
-    region: content
+    region: top
     label: hidden
     settings:
       view_mode: hero_mynd
@@ -88,14 +97,21 @@ content:
   field_stadsetning:
     type: string
     weight: 3
-    region: content
+    region: location
     label: inline
     settings:
       link_to_entity: false
-    third_party_settings: {  }
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: Hvar
+            lb-col: true
+            classes: {  }
   links:
     weight: 5
-    region: content
+    region: text
     settings: {  }
     third_party_settings: {  }
 hidden:

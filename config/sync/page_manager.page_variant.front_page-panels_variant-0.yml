@@ -5,6 +5,7 @@ dependencies:
   config:
     - page_manager.page.front_page
     - views.view.adildafelog
+    - views.view.verkefni
     - views.view.vidburdir
   module:
     - panels
@@ -21,7 +22,7 @@ variant_settings:
       label_display: visible
       views_label: ''
       items_per_page: none
-      region: middle
+      region: bottom
       weight: 0
       uuid: a01fa713-86ea-4cd6-bdeb-a70c1d6307d7
       context_mapping: {  }
@@ -32,15 +33,26 @@ variant_settings:
       label_display: visible
       views_label: ''
       items_per_page: none
-      region: first_above
-      weight: 0
+      region: top
+      weight: -1
       uuid: e888b8f5-9ba3-4eca-adfe-f40f01cad6d0
+      context_mapping: {  }
+    2ee57941-d89f-43e5-9b1e-968c0a500057:
+      id: 'views_block:verkefni-block_1'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: sidebar_right
+      weight: -1
+      uuid: 2ee57941-d89f-43e5-9b1e-968c0a500057
       context_mapping: {  }
   id: panels_variant
   uuid: d0e6b60d-2208-40f7-b197-cea251ee3be1
   label: null
   weight: 0
-  layout: layout_twocol_bricks
+  layout: front_page
   layout_settings: {  }
   page_title: ''
   storage_type: page_manager

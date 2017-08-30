@@ -4,13 +4,6 @@
     margin-bottom: 20px;
   }
 
-  .location {
-    background-color: $primary-green;
-    padding: 20px;
-    color: whitesmoke;
-    margin-bottom: 20px;
-  }
-
   .texts {
     .schedule {
       h2 {
@@ -29,4 +22,11 @@
   color: whitesmoke;
   padding: 20px;
   margin-bottom: 30px;
+}
+
+.location {
+  background-color: $primary-green;
+  padding: 20px;
+  color: whitesmoke;
+  margin-bottom: 20px;
 }

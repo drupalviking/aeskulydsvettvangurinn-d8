@@ -11,3 +11,31 @@ events:
       label: Text fields
     schedule:
       label: Event schedule
+
+events_teaser:
+  label: Event Teaser
+  category: AEV layouts
+  template: templates/event-teaser
+  regions:
+    top:
+      label: Top
+    location:
+      label: Location information
+    text:
+      label: Text fields
+
+front_page:
+  label: Front page layout
+  category: AEV layouts
+  template: templates/front-page
+  regions:
+    top:
+      label: Top
+    middle_left:
+      label: Middle Left
+    middle_right:
+      label: Middle Right
+    bottom:
+      label: Bottom
+    sidebar_right:
+      label: Sidebar Right
