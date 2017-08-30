@@ -11,7 +11,7 @@ _core:
 id: aev_breadcrumbs
 theme: aev
 region: content
-weight: -6
+weight: -5
 provider: null
 plugin: system_breadcrumb_block
 settings:

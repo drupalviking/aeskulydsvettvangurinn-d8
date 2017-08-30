@@ -30,8 +30,42 @@ third_party_settings:
         - field_stadsetning
       text:
         - body
+        - 'dynamic_block_field:node-rsvp_block'
       schedule:
         - field_dagskra
+    fields:
+      'dynamic_block_field:node-rsvp_block':
+        plugin_id: 'dynamic_block_field:node-rsvp_block'
+        weight: 4
+        label: hidden
+        formatter: default
+        ft:
+          id: expert
+          settings:
+            lb: Skráning
+            prefix: ''
+            lbw: true
+            lbw-el: h2
+            lbw-cl: registration
+            lbw-at: ''
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            suffix: ''
+            lb-col: false
+            ow: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-def-at: false
+            fi: false
+            fi-def-at: false
 id: node.vidburdir.default
 targetEntityType: node
 bundle: vidburdir
@@ -48,9 +82,8 @@ content:
     weight: 1
     label: inline
     settings:
-      future_format: '@interval hence'
-      past_format: '@interval ago'
-      granularity: 2
+      timezone_override: ''
+      format_type: long
     third_party_settings:
       ds:
         ft:
@@ -59,10 +92,10 @@ content:
             lb: ''
             lb-col: false
             classes: {  }
-    type: datetime_time_ago
+    type: datetime_default
     region: location
   field_dagskra:
-    weight: 4
+    weight: 5
     label: above
     settings: {  }
     third_party_settings:

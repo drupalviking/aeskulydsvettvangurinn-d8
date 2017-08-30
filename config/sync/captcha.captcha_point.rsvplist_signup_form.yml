@@ -1,0 +1,7 @@
+uuid: be91a19b-1dc5-4b15-b33e-9a5cfda40de2
+langcode: en
+status: true
+dependencies: {  }
+formId: rsvplist_signup_form
+captchaType: recaptcha/reCAPTCHA
+label: rsvplist_signup_form
