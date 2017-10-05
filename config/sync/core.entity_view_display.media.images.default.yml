@@ -7,8 +7,10 @@ dependencies:
     - field.field.media.images.field_image
     - field.field.media.images.field_mime
     - field.field.media.images.field_width
+    - image.style.landscape_480x270
     - media_entity.bundle.images
   module:
+    - ds
     - image
 id: media.images.default
 targetEntityType: media
@@ -19,9 +21,16 @@ content:
     weight: 0
     label: hidden
     settings:
-      image_style: ''
+      image_style: landscape_480x270
       image_link: ''
-    third_party_settings: {  }
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
     type: image
     region: content
 hidden:

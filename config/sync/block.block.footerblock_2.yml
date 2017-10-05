@@ -1,0 +1,25 @@
+uuid: 714cb70a-7334-4c4d-9ce9-9673c5c0529e
+langcode: is
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:84ed939f-0d6d-4495-b660-544f6227bdf9'
+  module:
+    - block_content
+  theme:
+    - aev
+id: footerblock_2
+theme: aev
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:84ed939f-0d6d-4495-b660-544f6227bdf9'
+settings:
+  id: 'block_content:84ed939f-0d6d-4495-b660-544f6227bdf9'
+  label: 'Footer block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
