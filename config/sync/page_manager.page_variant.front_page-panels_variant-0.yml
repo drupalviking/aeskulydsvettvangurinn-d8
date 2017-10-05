@@ -22,7 +22,7 @@ variant_settings:
       label_display: '0'
       views_label: ''
       items_per_page: none
-      region: frontpage_bottom
+      region: top
       weight: -1
       uuid: a01fa713-86ea-4cd6-bdeb-a70c1d6307d7
       context_mapping: {  }
@@ -33,7 +33,7 @@ variant_settings:
       label_display: visible
       views_label: ''
       items_per_page: none
-      region: full_width_content
+      region: top
       weight: -1
       uuid: e888b8f5-9ba3-4eca-adfe-f40f01cad6d0
       context_mapping: {  }
@@ -44,7 +44,7 @@ variant_settings:
       label_display: visible
       views_label: ''
       items_per_page: none
-      region: frontpage_top
+      region: top
       weight: -1
       uuid: 2ee57941-d89f-43e5-9b1e-968c0a500057
       context_mapping: {  }
