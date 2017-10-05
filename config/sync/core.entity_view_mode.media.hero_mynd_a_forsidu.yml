@@ -1,0 +1,10 @@
+uuid: af7f11ef-e9b3-4e83-90ea-a6ff35467476
+langcode: is
+status: true
+dependencies:
+  module:
+    - media_entity
+id: media.hero_mynd_a_forsidu
+label: 'Hero mynd á forsíðu'
+targetEntityType: media
+cache: true

@@ -1,0 +1,23 @@
+uuid: 9bacaafa-61f6-41da-8e1f-1be673e90378
+langcode: is
+status: true
+dependencies:
+  config:
+    - block_content.type.hero_mynd
+    - field.storage.block_content.field_hlekkur_hnappur
+  module:
+    - link
+id: block_content.hero_mynd.field_hlekkur_hnappur
+field_name: field_hlekkur_hnappur
+entity_type: block_content
+bundle: hero_mynd
+label: 'Hlekkur (hnappur)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

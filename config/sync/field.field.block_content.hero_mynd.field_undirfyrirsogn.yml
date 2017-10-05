@@ -1,0 +1,19 @@
+uuid: eb80cc4d-6f1f-4367-ab08-a9f61b8d4b7d
+langcode: is
+status: true
+dependencies:
+  config:
+    - block_content.type.hero_mynd
+    - field.storage.block_content.field_undirfyrirsogn
+id: block_content.hero_mynd.field_undirfyrirsogn
+field_name: field_undirfyrirsogn
+entity_type: block_content
+bundle: hero_mynd
+label: Undirfyrirsögn
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

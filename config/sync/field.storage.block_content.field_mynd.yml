@@ -1,0 +1,20 @@
+uuid: ef2610f1-6ff5-4bb8-a22e-6e2c42b54f9c
+langcode: is
+status: true
+dependencies:
+  module:
+    - block_content
+    - media_entity
+id: block_content.field_mynd
+field_name: field_mynd
+entity_type: block_content
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

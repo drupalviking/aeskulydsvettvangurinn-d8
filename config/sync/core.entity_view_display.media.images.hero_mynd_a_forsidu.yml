@@ -1,0 +1,45 @@
+uuid: 6c21c422-b1dc-421a-94bf-0aa6410c79b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.hero_mynd_a_forsidu
+    - field.field.media.images.field_height
+    - field.field.media.images.field_image
+    - field.field.media.images.field_mime
+    - field.field.media.images.field_width
+    - image.style.1600x600
+    - media_entity.bundle.images
+  module:
+    - ds
+    - image
+id: media.images.hero_mynd_a_forsidu
+targetEntityType: media
+bundle: images
+mode: hero_mynd_a_forsidu
+content:
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: 1600x600
+      image_link: ''
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    type: image
+    region: content
+hidden:
+  created: true
+  field_height: true
+  field_mime: true
+  field_width: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

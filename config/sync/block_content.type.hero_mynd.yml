@@ -1,0 +1,8 @@
+uuid: bea46f40-cb8f-494a-9f61-3431aae1c49d
+langcode: is
+status: true
+dependencies: {  }
+id: hero_mynd
+label: 'Hero mynd'
+revision: 1
+description: 'Hér eru settar inn "hetju"myndir til að birta á forsíðu.'
