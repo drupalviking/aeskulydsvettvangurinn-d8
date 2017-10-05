@@ -1,6 +1,9 @@
 global-styling:
   css:
     theme:
+      css/font-awesome.min.css: {}
+      css/linearicons.css: {}
+      css/material-icons.min.css: {}
       css/style.css: {}
 
 bootstrap-scripts:
