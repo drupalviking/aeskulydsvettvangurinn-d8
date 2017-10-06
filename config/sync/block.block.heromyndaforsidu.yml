@@ -1,0 +1,31 @@
+uuid: 7d66f030-86b8-46c6-8288-ea2e02d847f6
+langcode: is
+status: true
+dependencies:
+  content:
+    - 'block_content:hero_mynd:02e32fe4-9c54-4e7f-aaa3-45d1f5ef7183'
+  module:
+    - block_content
+    - system
+  theme:
+    - aev
+id: heromyndaforsidu
+theme: aev
+region: hero
+weight: 0
+provider: null
+plugin: 'block_content:02e32fe4-9c54-4e7f-aaa3-45d1f5ef7183'
+settings:
+  id: 'block_content:02e32fe4-9c54-4e7f-aaa3-45d1f5ef7183'
+  label: 'Hero mynd á forsíðu'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

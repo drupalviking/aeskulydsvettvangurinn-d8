@@ -1,0 +1,28 @@
+{% set container = theme.settings.fluid_container ? 'container-fluid' : 'container' %}
+{% include 'header.html.twig' %}
+
+{# Main #}
+{% block main %}
+    {% block header %}
+        <div role="heading">
+            {{ page.header }}
+        </div>
+    {% endblock %}
+    <div class="hero-section">
+        {{ page.hero }}
+    </div>
+    <div class="{{ container }} content-top">
+        <div class="col-sm-12">
+            {{ page.frontpage_top }}
+        </div>
+    </div>
+    <div class="content-full-width-middle">
+        {{ page.full_width_content }}
+    <div class="{{ container }} content-bottom">
+        <div class="col-sm-12">
+            {{ page.frontpage_bottom }}
+        </div>
+    </div>
+    {% endblock %}
+
+{% include 'footer.html.twig' %}

@@ -1,0 +1,24 @@
+uuid: 5e798303-958d-46ef-adde-5d77e5e8daed
+langcode: is
+status: true
+dependencies:
+  config:
+    - views.view.vidburdir
+  module:
+    - views
+  theme:
+    - aev
+id: views_block__vidburdir_block_1
+theme: aev
+region: full_width_content_middle
+weight: 0
+provider: null
+plugin: 'views_block:vidburdir-block_1'
+settings:
+  id: 'views_block:vidburdir-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

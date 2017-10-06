@@ -1,0 +1,30 @@
+uuid: 4fbc8c0b-7485-4f14-b814-3cd68179cb96
+langcode: is
+status: true
+dependencies:
+  config:
+    - views.view.verkefni
+  module:
+    - system
+    - views
+  theme:
+    - aev
+id: views_block__verkefni_block_1
+theme: aev
+region: frontpage_bottom
+weight: 0
+provider: null
+plugin: 'views_block:verkefni-block_1'
+settings:
+  id: 'views_block:verkefni-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

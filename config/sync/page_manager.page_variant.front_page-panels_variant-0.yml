@@ -7,7 +7,10 @@ dependencies:
     - views.view.adildafelog
     - views.view.verkefni
     - views.view.vidburdir
+  content:
+    - 'block_content:hero_mynd:02e32fe4-9c54-4e7f-aaa3-45d1f5ef7183'
   module:
+    - block_content
     - panels
     - views
 id: front_page-panels_variant-0
@@ -22,7 +25,7 @@ variant_settings:
       label_display: '0'
       views_label: ''
       items_per_page: none
-      region: top
+      region: frontpage_top
       weight: -1
       uuid: a01fa713-86ea-4cd6-bdeb-a70c1d6307d7
       context_mapping: {  }
@@ -33,7 +36,7 @@ variant_settings:
       label_display: visible
       views_label: ''
       items_per_page: none
-      region: top
+      region: frontpage_bottom
       weight: -1
       uuid: e888b8f5-9ba3-4eca-adfe-f40f01cad6d0
       context_mapping: {  }
@@ -44,9 +47,21 @@ variant_settings:
       label_display: visible
       views_label: ''
       items_per_page: none
-      region: top
+      region: full_width_content
       weight: -1
       uuid: 2ee57941-d89f-43e5-9b1e-968c0a500057
+      context_mapping: {  }
+    7116e58d-fea3-414b-a1cf-f1bc6aaa9b62:
+      id: 'block_content:02e32fe4-9c54-4e7f-aaa3-45d1f5ef7183'
+      label: 'Hero mynd á forsíðu'
+      provider: block_content
+      label_display: '0'
+      status: true
+      info: ''
+      view_mode: full
+      region: hero
+      weight: 0
+      uuid: 7116e58d-fea3-414b-a1cf-f1bc6aaa9b62
       context_mapping: {  }
   id: panels_variant
   uuid: d0e6b60d-2208-40f7-b197-cea251ee3be1

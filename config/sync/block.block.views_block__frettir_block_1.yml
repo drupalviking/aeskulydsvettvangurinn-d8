@@ -1,0 +1,24 @@
+uuid: 38f2d3e0-562f-46a2-8f25-acd9544dc1dd
+langcode: is
+status: true
+dependencies:
+  config:
+    - views.view.frettir
+  module:
+    - views
+  theme:
+    - aev
+id: views_block__frettir_block_1
+theme: aev
+region: frontpage_top
+weight: 0
+provider: null
+plugin: 'views_block:frettir-block_1'
+settings:
+  id: 'views_block:frettir-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

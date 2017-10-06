@@ -6,11 +6,11 @@
  * Place your custom PHP code in this file.
  */
 function aev_preprocess_block(&$variables) {
-  if($variables['attributes']['id'] == 'block-heromynd-a-forsidu') {
+  if($variables['elements']['#derivative_plugin_id'] == '02e32fe4-9c54-4e7f-aaa3-45d1f5ef7183') {
     $image_obj = $variables['content']['field_mynd'][0]['#media'];
 
     if (!empty($image_obj)) {
-      $variables['hero_image'] = \Drupal\image\Entity\ImageStyle::load('1600x1200')->buildUrl($image_obj->field_mynd->entity->getFileUri());
+      $variables['hero_image'] = \Drupal\image\Entity\ImageStyle::load('1600x600')->buildUrl($image_obj->field_image->entity->getFileUri());
     }
   }
 }
