@@ -23,17 +23,3 @@ events_teaser:
       label: Location information
     text:
       label: Text fields
-
-front_page:
-  label: Front page layout
-  category: AEV layouts
-  template: templates/front-page
-  regions:
-    hero:
-      label: Hero region
-    frontpage_top:
-      label: Front Page Top Content
-    full_width_content:
-      label: Full-width content section
-    frontpage_bottom:
-      label: Front Page Bottom Content
