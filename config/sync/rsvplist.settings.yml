@@ -3,3 +3,4 @@ allowed_types:
   - vidburdir
 _core:
   default_config_hash: ZXJmCNTRwuSHmUBMLtp8VaYKGUyZizEU-e9DiUoOXtk
+langcode: is

@@ -1,0 +1,25 @@
+uuid: c53903f7-68ee-4178-8b2c-61915929ce78
+langcode: is
+status: true
+dependencies:
+  module:
+    - node
+id: forsidukassar
+label: Forsíðukassar
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      page: page
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 3
+  act_as_queue: false
+  reverse_in_admin: false

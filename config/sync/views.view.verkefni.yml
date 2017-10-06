@@ -4,9 +4,11 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - entityqueue.entity_queue.verkefni
     - node.type.verkefni
     - system.menu.main
   module:
+    - entityqueue
     - node
     - user
 id: verkefni
@@ -136,21 +138,7 @@ display:
           entity_type: node
           entity_field: type
           plugin_id: bundle
-      sorts:
-        title:
-          id: title
-          table: node_field_data
-          field: title
-          order: ASC
-          entity_type: node
-          entity_field: title
-          plugin_id: standard
-          relationship: none
-          group_type: group
-          admin_label: ''
-          exposed: false
-          expose:
-            label: ''
+      sorts: {  }
       title: Verkefni
       header: {  }
       footer: {  }
@@ -182,6 +170,7 @@ display:
         pager: false
         style: false
         row: false
+        relationships: false
       style:
         type: html_list
         options:
@@ -195,6 +184,18 @@ display:
         type: 'entity:node'
         options:
           view_mode: teaser
+      relationships:
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: none
+          group_type: group
+          admin_label: 'Content queue'
+          required: true
+          limit_queue: verkefni
+          entity_type: node
+          plugin_id: entity_queue
     cache_metadata:
       max-age: -1
       contexts:
@@ -202,7 +203,10 @@ display:
         - 'languages:language_interface'
         - 'user.node_grants:view'
         - user.permissions
-      tags: {  }
+      tags:
+        - 'config:entityqueue.entity_queue.verkefni'
+        - entity_field_info
+        - views_data
   page_1:
     display_plugin: page
     id: page_1

@@ -77,6 +77,7 @@
         "drupal/ds": "^3.1",
         "drupal/entity_browser": "^1.0",
         "drupal/entity_browser_enhanced": "^1.0@beta",
+        "drupal/entityqueue": "^1.0@alpha",
         "drupal/file_browser": "^1.1",
         "drupal/focal_point": "^1.0@beta",
         "drupal/google_analytics": "^2.1",

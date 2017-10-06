@@ -1,0 +1,25 @@
+uuid: c53f6d90-12b3-474a-8f25-71414cb25fd2
+langcode: is
+status: true
+dependencies:
+  module:
+    - node
+id: verkefni
+label: Verkefni
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      verkefni: verkefni
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 0
+  act_as_queue: false
+  reverse_in_admin: false
