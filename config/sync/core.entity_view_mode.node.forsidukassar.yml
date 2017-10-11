@@ -1,0 +1,10 @@
+uuid: 90e0f31b-170e-4d39-bda4-7efd5e64d175
+langcode: is
+status: true
+dependencies:
+  module:
+    - node
+id: node.forsidukassar
+label: Forsíðukassar
+targetEntityType: node
+cache: true

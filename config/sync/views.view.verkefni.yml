@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.forsidukassar
     - core.entity_view_mode.node.teaser
     - entityqueue.entity_queue.verkefni
     - node.type.verkefni
@@ -59,7 +60,7 @@ display:
       style:
         type: html_list
         options:
-          row_class: 'col-lg-4 col-md-4 col-sm-6 col-xs-12'
+          row_class: 'col-lg-4 col-md-4 col-sm-4 col-xs-12'
           default_row_class: true
           uses_fields: false
           type: ul
@@ -140,7 +141,20 @@ display:
           plugin_id: bundle
       sorts: {  }
       title: Verkefni
-      header: {  }
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: '<h1 class="frontpage-block-headline">Verkefnin okkar</h1>'
+            format: full_html
+          plugin_id: text
       footer: {  }
       empty: {  }
       relationships: {  }
@@ -171,19 +185,21 @@ display:
         style: false
         row: false
         relationships: false
+        header: false
       style:
         type: html_list
         options:
-          row_class: col-lg-4
+          row_class: 'col-lg-4 col-md-4 col-sm-4 col-xs-12'
           default_row_class: true
           uses_fields: false
           type: ul
           wrapper_class: item-list
-          class: ''
+          class: frontpage-box
       row:
         type: 'entity:node'
         options:
-          view_mode: teaser
+          relationship: none
+          view_mode: forsidukassar
       relationships:
         entityqueue_relationship:
           id: entityqueue_relationship
@@ -196,6 +212,20 @@ display:
           limit_queue: verkefni
           entity_type: node
           plugin_id: entity_queue
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: '<h1 class="frontpage-block-headline"><span>Verkefnin okkar</span></h1>'
+            format: full_html
+          plugin_id: text
     cache_metadata:
       max-age: -1
       contexts:

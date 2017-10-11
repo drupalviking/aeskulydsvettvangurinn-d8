@@ -18,10 +18,11 @@
     </div>
     <div class="content-full-width-middle">
         {{ page.full_width_content }}
-        <div class="{{ container }} content-bottom">
-            <div class="col-sm-12">
-                {{ page.frontpage_bottom }}
-            </div>
+    </div>
+    <div class="{{ container }} content-bottom">
+        <div class="col-sm-12">
+            {{ page.frontpage_bottom }}
         </div>
+    </div>
     {% endblock %}
 {% include 'footer.html.twig' %}

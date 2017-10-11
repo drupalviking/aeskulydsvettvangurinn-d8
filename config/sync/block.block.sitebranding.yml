@@ -1,17 +1,15 @@
-uuid: e4ea9df3-21c1-4155-b079-0907e4512f54
-langcode: en
+uuid: cc2efdcc-949b-4231-b571-6267170da044
+langcode: is
 status: true
 dependencies:
   module:
     - system
   theme:
     - aev
-_core:
-  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
-id: aev_branding
+id: sitebranding
 theme: aev
-region: header
-weight: -6
+region: hero
+weight: 0
 provider: null
 plugin: system_branding_block
 settings:
@@ -26,5 +24,5 @@ visibility:
   request_path:
     id: request_path
     pages: '<front>'
-    negate: true
+    negate: false
     context_mapping: {  }

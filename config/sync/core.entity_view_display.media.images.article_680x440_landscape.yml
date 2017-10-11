@@ -1,0 +1,45 @@
+uuid: a44d577d-cb68-4eb8-9d0a-947c50ba090b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.article_680x440_landscape
+    - field.field.media.images.field_height
+    - field.field.media.images.field_image
+    - field.field.media.images.field_mime
+    - field.field.media.images.field_width
+    - image.style.article_680x440_landscape_
+    - media_entity.bundle.images
+  module:
+    - ds
+    - image
+id: media.images.article_680x440_landscape
+targetEntityType: media
+bundle: images
+mode: article_680x440_landscape
+content:
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: article_680x440_landscape_
+      image_link: ''
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    type: image
+    region: content
+hidden:
+  created: true
+  field_height: true
+  field_mime: true
+  field_width: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

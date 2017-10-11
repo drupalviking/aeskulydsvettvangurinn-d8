@@ -1,0 +1,31 @@
+uuid: 62449d71-74fa-44ff-8442-ddce2cb765b2
+langcode: is
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:47cf28bc-6bf1-4ca4-a74b-b69a5a45f9a9'
+  module:
+    - block_content
+    - system
+  theme:
+    - aev
+id: gildiaev
+theme: aev
+region: frontpage_top
+weight: -8
+provider: null
+plugin: 'block_content:47cf28bc-6bf1-4ca4-a74b-b69a5a45f9a9'
+settings:
+  id: 'block_content:47cf28bc-6bf1-4ca4-a74b-b69a5a45f9a9'
+  label: 'Gildi ÆV'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

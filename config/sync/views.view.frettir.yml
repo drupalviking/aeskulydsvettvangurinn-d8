@@ -3,6 +3,7 @@ langcode: is
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.forsidukassar
     - core.entity_view_mode.node.teaser
     - node.type.article
   module:
@@ -78,6 +79,7 @@ display:
       row:
         type: 'entity:node'
         options:
+          relationship: none
           view_mode: teaser
       fields:
         title:
@@ -194,7 +196,20 @@ display:
           granularity: minute
           plugin_id: date
       title: Fréttir
-      header: {  }
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: '<h1 class="frontpage-block-headline"><span>Fréttir frá starfinu</span></h1>'
+            format: full_html
+          plugin_id: text
       footer: {  }
       empty: {  }
       relationships: {  }
@@ -219,12 +234,12 @@ display:
       style:
         type: html_list
         options:
-          row_class: 'col-lg-4 col-md-4 col-sm-12 col-xs-12'
+          row_class: 'col-lg-4 col-md-4 col-sm-4 col-xs-12'
           default_row_class: true
           uses_fields: false
           type: ul
           wrapper_class: item-list
-          class: ''
+          class: frontpage-box
       defaults:
         style: false
         row: false
@@ -232,7 +247,8 @@ display:
       row:
         type: 'entity:node'
         options:
-          view_mode: teaser
+          relationship: none
+          view_mode: forsidukassar
       pager:
         type: some
         options:

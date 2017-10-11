@@ -1,8 +1,9 @@
-uuid: 1066e61f-7291-4cf4-bc57-1cf1fd0d71e5
+uuid: 62f3db15-af01-4016-b32b-32f96a08184d
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.forsidukassar
     - field.field.node.verkefni.body
     - field.field.node.verkefni.field_mynd
     - field.field.node.verkefni.field_skjol
@@ -13,31 +14,39 @@ dependencies:
 third_party_settings:
   ds:
     layout:
-      id: layout_onecol
-      library: layout_discovery/onecol
+      id: frontpage_boxes
+      library: null
       disable_css: false
       entity_classes: all_classes
       settings: {  }
     regions:
-      content:
+      image:
         - field_mynd
+      text:
+        - node_title
+      buttons:
         - node_link
     fields:
       node_link:
         plugin_id: node_link
+        weight: 2
+        label: hidden
+        formatter: default
+      node_title:
+        plugin_id: node_title
         weight: 1
         label: hidden
         formatter: default
-id: node.verkefni.default
+id: node.verkefni.forsidukassar
 targetEntityType: node
 bundle: verkefni
-mode: default
+mode: forsidukassar
 content:
   field_mynd:
     weight: 0
     label: hidden
     settings:
-      view_mode: portrait
+      view_mode: article_680x440_landscape
       link: false
     third_party_settings:
       ds:
@@ -48,7 +57,7 @@ content:
             lb-col: false
             classes: {  }
     type: entity_reference_entity_view
-    region: content
+    region: image
 hidden:
   body: true
   field_skjol: true

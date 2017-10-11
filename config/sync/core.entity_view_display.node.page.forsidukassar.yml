@@ -1,0 +1,76 @@
+uuid: 4b6b1892-9124-4311-8cb7-30cccaec1ef9
+langcode: is
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.forsidukassar
+    - field.field.node.page.body
+    - field.field.node.page.field_mynd
+    - field.field.node.page.field_skjol
+    - node.type.page
+  module:
+    - ds
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: frontpage_boxes
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings: {  }
+    regions:
+      image:
+        - field_mynd
+      text:
+        - node_title
+        - body
+      buttons:
+        - node_link
+    fields:
+      node_link:
+        plugin_id: node_link
+        weight: 3
+        label: hidden
+        formatter: default
+      node_title:
+        plugin_id: node_title
+        weight: 1
+        label: hidden
+        formatter: default
+_core:
+  default_config_hash: g1S3_GLaxq4l3I9RIca5Mlz02MxI2KmOquZpHw59akM
+id: node.page.forsidukassar
+targetEntityType: node
+bundle: page
+mode: forsidukassar
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 2
+    region: text
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  field_mynd:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: landscape
+      link: false
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    type: entity_reference_entity_view
+    region: image
+hidden:
+  field_skjol: true
+  langcode: true
+  links: true

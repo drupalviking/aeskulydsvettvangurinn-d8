@@ -1,0 +1,31 @@
+uuid: 366a9667-1a74-40c1-ba88-86a348b72dd3
+langcode: is
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:973db75f-a215-4f66-9744-1f3ca02d69b4'
+  module:
+    - block_content
+    - system
+  theme:
+    - aev
+id: hvadgeriraev
+theme: aev
+region: frontpage_top
+weight: -9
+provider: null
+plugin: 'block_content:973db75f-a215-4f66-9744-1f3ca02d69b4'
+settings:
+  id: 'block_content:973db75f-a215-4f66-9744-1f3ca02d69b4'
+  label: 'Hvað gerir ÆV?'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

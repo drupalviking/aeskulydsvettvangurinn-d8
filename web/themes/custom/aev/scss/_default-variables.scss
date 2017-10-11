@@ -13,20 +13,46 @@
 // Set the proper directory for the Bootstrap Glyphicon font.
 $icon-font-path: '../bootstrap/assets/fonts/bootstrap/';
 $background-color: #fff;
+$background-color-alpha: rgba(255,255,255,.4);
+$color-white: whitesmoke;
 
 $primary-red: #b53c19;
+$primary-red-alpha: rgba(181,60,25,.4);
 $primary-blue: #0d87af;
+$primary-blue-alpha: rgba(13,135,175,.4);
 $primary-green: #547C08;
+$primary-green-alpha: rgba(84, 124, 8, .4);
 
 $secondary-red: #a8262c;
+$secondary-red-alpha: rgba(168,38,44,.4);
 $secondary-orange: #ff730e;
+$secondary-orange-alpha: rgba(255,115,14,.4);
 $secondary-lime: #eadf0a;
+$secondary-lime-alpha: rgba(234,223,10,.4);
 $secondary-yellow: #f3bd2a;
+$secondary-yellow-alpha: rgba(243,189,42,.4);
 $secondary-brown-green: #a89700;
+$secondary-brown-green-alpha: rgba(168,151,0,.4);
 $secondary-green: #33540d;
+$secondary-green-alpha: rgba(51,84,13,.4);
 $secondary-turqoise: #009479;
+$secondary-turqoise-alpha: rgba(0,148,121,.4);
 $secondary-aqua: #00bdc9;
+$secondary-aqua-alpha: rgba(0,188,200,.4);
 $secondary-blue: #0788c9;
+$secondary-blue-alpha: rgba(7,136,201,.4);
 $secondary-navy: #072f6b;
+$secondary-navy-alpha: rgba(7,47,107,.4);
 $secondary-purple: #66357d;
+$secondary-purple-alpha: rgba(102,53,125,.4);
 $secondary-pink: #b33899;
+$secondary-pink-alpha: rgba(179,56,153,.4);
+
+$project-color: $secondary-purple;
+$project-color-alpha: $secondary-purple-alpha;
+$news-color: $secondary-orange;
+$news-color-alpha: $secondary-orange-alpha;
+$frontpage-boxes: $secondary-green;
+$frontpage-boxes-alpha: $secondary-green-alpha;
+$aev-color: $primary-red;
+$aev-color-alpha: $primary-red-alpha;

@@ -23,3 +23,15 @@ events_teaser:
       label: Location information
     text:
       label: Text fields
+
+frontpage_boxes:
+  label: Frontpage Boxes
+  category: AEV layouts
+  template: templates/frontpage-boxes
+  regions:
+    image:
+      label: Image
+    text:
+      label: Text
+    buttons:
+      label: Buttons

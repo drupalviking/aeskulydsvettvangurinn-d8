@@ -1,0 +1,85 @@
+uuid: 955a8651-656d-44cf-b2d9-c3b02f6f67b2
+langcode: is
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.forsidukassar
+    - field.field.node.article.body
+    - field.field.node.article.comment
+    - field.field.node.article.field_mynd
+    - field.field.node.article.field_tags
+    - node.type.article
+  module:
+    - ds
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: frontpage_boxes
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings: {  }
+    regions:
+      image:
+        - field_mynd
+      text:
+        - node_title
+        - body
+      buttons:
+        - node_link
+    fields:
+      node_link:
+        plugin_id: node_link
+        weight: 3
+        label: hidden
+        formatter: default
+      node_title:
+        plugin_id: node_title
+        weight: 1
+        label: hidden
+        formatter: default
+_core:
+  default_config_hash: qVtHNxqdXB9w369AO5JB5SVhflquWqFm5xfyvYLAIlM
+id: node.article.forsidukassar
+targetEntityType: node
+bundle: article
+mode: forsidukassar
+content:
+  body:
+    type: text_trimmed
+    weight: 2
+    region: text
+    settings:
+      trim_length: 300
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    label: hidden
+  field_mynd:
+    type: entity_reference_entity_view
+    weight: 0
+    region: image
+    label: hidden
+    settings:
+      view_mode: article_680x440_landscape
+      link: false
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+hidden:
+  comment: true
+  field_tags: true
+  langcode: true
+  links: true

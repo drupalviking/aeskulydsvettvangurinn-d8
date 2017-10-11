@@ -3,15 +3,15 @@ langcode: is
 status: true
 dependencies:
   config:
+    - entity_browser.browser.media_browser
     - field.field.node.article.body
     - field.field.node.article.comment
-    - field.field.node.article.field_image
+    - field.field.node.article.field_mynd
     - field.field.node.article.field_tags
-    - image.style.thumbnail
     - node.type.article
   module:
     - comment
-    - image
+    - entity_browser
     - path
     - text
 _core:
@@ -42,19 +42,28 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_image:
-    type: image_image
-    weight: 4
-    region: content
+  field_mynd:
+    weight: 31
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+      entity_browser: media_browser
+      field_widget_display: rendered_entity
+      field_widget_edit: true
+      field_widget_remove: true
+      selection_mode: selection_append
+      field_widget_display_settings:
+        view_mode: poster_medium
+      open: false
     third_party_settings: {  }
+    type: entity_browser_entity_reference
+    region: content
   field_tags:
     type: entity_reference_autocomplete_tags
     weight: 3
     region: content
-    settings: {  }
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   langcode:
     type: language_select

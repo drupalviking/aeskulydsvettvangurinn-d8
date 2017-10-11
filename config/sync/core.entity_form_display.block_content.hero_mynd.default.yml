@@ -4,11 +4,13 @@ status: true
 dependencies:
   config:
     - block_content.type.hero_mynd
+    - entity_browser.browser.media_browser
     - field.field.block_content.hero_mynd.field_fyrirsogn
     - field.field.block_content.hero_mynd.field_hlekkur_hnappur
     - field.field.block_content.hero_mynd.field_mynd
     - field.field.block_content.hero_mynd.field_undirfyrirsogn
   module:
+    - entity_browser
     - link
 id: block_content.hero_mynd.default
 targetEntityType: block_content
@@ -34,11 +36,15 @@ content:
   field_mynd:
     weight: 5
     settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
+      entity_browser: media_browser
+      field_widget_display: label
+      field_widget_edit: true
+      field_widget_remove: true
+      selection_mode: selection_append
+      open: false
+      field_widget_display_settings: {  }
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: entity_browser_entity_reference
     region: content
   field_undirfyrirsogn:
     weight: 3

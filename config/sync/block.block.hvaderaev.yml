@@ -1,0 +1,31 @@
+uuid: a70c48a9-03c2-44bf-b5f4-9cc88b995e02
+langcode: is
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:d0afb0fc-2b11-4d00-ad3c-c4a2f9d5577f'
+  module:
+    - block_content
+    - system
+  theme:
+    - aev
+id: hvaderaev
+theme: aev
+region: frontpage_top
+weight: -10
+provider: null
+plugin: 'block_content:d0afb0fc-2b11-4d00-ad3c-c4a2f9d5577f'
+settings:
+  id: 'block_content:d0afb0fc-2b11-4d00-ad3c-c4a2f9d5577f'
+  label: 'Hvað er ÆV?'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

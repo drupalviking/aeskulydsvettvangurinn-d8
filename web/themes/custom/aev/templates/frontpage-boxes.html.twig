@@ -1,0 +1,15 @@
+<div class="frontpage-box-with-image">
+    {% if content.image|render %}
+    <div class="top">
+        {{ content.image }}
+    </div>
+    {% endif %}
+    <div class="texts">
+        <div class="text col-xs-12">
+            {{ content.text }}
+        </div>
+    </div>
+    <div class="buttons">
+        {{ content.buttons }}
+    </div>
+</div>

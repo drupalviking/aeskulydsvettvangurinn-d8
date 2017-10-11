@@ -10,8 +10,8 @@ dependencies:
     - aev
 id: views_block__frettir_block_1
 theme: aev
-region: frontpage_top
-weight: 0
+region: frontpage_bottom
+weight: -10
 provider: null
 plugin: 'views_block:frettir-block_1'
 settings:

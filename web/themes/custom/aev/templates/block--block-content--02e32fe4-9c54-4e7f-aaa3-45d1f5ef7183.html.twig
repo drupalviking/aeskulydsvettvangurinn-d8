@@ -55,15 +55,24 @@ set classes = [
 %}
 <section class="frontpage-hero" style="background-image: url('{{ hero_image }}');">
     {% block content %}
+        {% if content.field_fyrirsogn|render %}
         <div class="captions">
             <div class="text">
                 <h1>{{ content.field_fyrirsogn }}</h1>
                 <h2>{{ content.field_undirfyrirsogn }}</h2>
             </div>
             <div class="button-link">
-                {{ content.field_hlekkur }}
+                {{ content.field_hlekkur_hnappur }}
             </div>
         </div>
+        {% else %}
+        <div class="button-wrapper">
+            <div class="button-link">
+                {{ content.field_hlekkur_hnappur }}
+            </div>
+        </div>
+        {% endif %}
+
 
     {% endblock %}
 </section>
