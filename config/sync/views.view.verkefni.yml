@@ -140,7 +140,7 @@ display:
           entity_field: type
           plugin_id: bundle
       sorts: {  }
-      title: Verkefni
+      title: 'Verkefni ÆV'
       header:
         area:
           id: area
@@ -152,7 +152,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: '<h1 class="frontpage-block-headline">Verkefnin okkar</h1>'
+            value: '<h1 class="frontpage-block-headline">Verkefni ÆV</h1>'
             format: full_html
           plugin_id: text
       footer: {  }
@@ -223,7 +223,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: '<h1 class="frontpage-block-headline"><span>Verkefnin okkar</span></h1>'
+            value: '<h1 class="frontpage-block-headline"><span>Verkefni ÆV</span></h1>'
             format: full_html
           plugin_id: text
     cache_metadata:

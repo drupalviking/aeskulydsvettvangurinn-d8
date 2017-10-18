@@ -182,19 +182,20 @@ display:
           entity_field: type
           plugin_id: bundle
       sorts:
-        created_1:
-          id: created_1
-          table: taxonomy_index
-          field: created
+        status:
+          id: status
+          table: node_field_data
+          field: status
           relationship: none
           group_type: group
           admin_label: ''
-          order: DESC
+          order: ASC
           exposed: false
           expose:
             label: ''
-          granularity: minute
-          plugin_id: date
+          entity_type: node
+          entity_field: status
+          plugin_id: standard
       title: Fréttir
       header:
         area:
@@ -244,6 +245,7 @@ display:
         style: false
         row: false
         pager: false
+        sorts: false
       row:
         type: 'entity:node'
         options:
@@ -254,6 +256,22 @@ display:
         options:
           items_per_page: 3
           offset: 0
+      sorts:
+        created:
+          id: created
+          table: node_field_data
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: DESC
+          exposed: false
+          expose:
+            label: ''
+          granularity: day
+          entity_type: node
+          entity_field: created
+          plugin_id: date
     cache_metadata:
       max-age: -1
       contexts:
@@ -276,7 +294,7 @@ display:
         css_class: false
         title: false
       css_class: page-overview
-      title: 'Fréttir úr starfinu'
+      title: 'Fréttir frá starfinu'
     cache_metadata:
       max-age: -1
       contexts:

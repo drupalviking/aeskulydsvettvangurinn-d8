@@ -9,7 +9,7 @@ dependencies:
 id: sitebranding
 theme: aev
 region: hero
-weight: 0
+weight: -10
 provider: null
 plugin: system_branding_block
 settings:

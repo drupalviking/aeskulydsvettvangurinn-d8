@@ -1,9 +1,9 @@
-uuid: 62449d71-74fa-44ff-8442-ddce2cb765b2
+uuid: 4d18e814-c3f2-4493-a889-1e2a2fe8e127
 langcode: is
 status: true
 dependencies:
   content:
-    - 'block_content:basic:47cf28bc-6bf1-4ca4-a74b-b69a5a45f9a9'
+    - 'block_content:basic:c2b1e17c-f647-44a0-9062-9e38753a4a85'
   module:
     - block_content
     - system
@@ -14,9 +14,9 @@ theme: aev
 region: frontpage_top
 weight: -8
 provider: null
-plugin: 'block_content:47cf28bc-6bf1-4ca4-a74b-b69a5a45f9a9'
+plugin: 'block_content:c2b1e17c-f647-44a0-9062-9e38753a4a85'
 settings:
-  id: 'block_content:47cf28bc-6bf1-4ca4-a74b-b69a5a45f9a9'
+  id: 'block_content:c2b1e17c-f647-44a0-9062-9e38753a4a85'
   label: 'Gildi ÆV'
   provider: block_content
   label_display: visible

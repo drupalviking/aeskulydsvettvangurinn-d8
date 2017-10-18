@@ -12,7 +12,7 @@ dependencies:
 id: heromyndaforsidu
 theme: aev
 region: hero
-weight: 0
+weight: -9
 provider: null
 plugin: 'block_content:02e32fe4-9c54-4e7f-aaa3-45d1f5ef7183'
 settings:

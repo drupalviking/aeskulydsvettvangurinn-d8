@@ -1,9 +1,9 @@
-uuid: 366a9667-1a74-40c1-ba88-86a348b72dd3
+uuid: 6f072447-fb23-4e92-bf29-4d1e29c98501
 langcode: is
 status: true
 dependencies:
   content:
-    - 'block_content:basic:973db75f-a215-4f66-9744-1f3ca02d69b4'
+    - 'block_content:basic:d2ea47bc-02e0-418c-913a-db9e69e73d85'
   module:
     - block_content
     - system
@@ -14,9 +14,9 @@ theme: aev
 region: frontpage_top
 weight: -9
 provider: null
-plugin: 'block_content:973db75f-a215-4f66-9744-1f3ca02d69b4'
+plugin: 'block_content:d2ea47bc-02e0-418c-913a-db9e69e73d85'
 settings:
-  id: 'block_content:973db75f-a215-4f66-9744-1f3ca02d69b4'
+  id: 'block_content:d2ea47bc-02e0-418c-913a-db9e69e73d85'
   label: 'Hvað gerir ÆV?'
   provider: block_content
   label_display: visible
