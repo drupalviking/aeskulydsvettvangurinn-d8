@@ -270,6 +270,13 @@ display:
     display_options:
       display_extenders: {  }
       path: frettir
+      header: {  }
+      defaults:
+        header: false
+        css_class: false
+        title: false
+      css_class: page-overview
+      title: 'Fréttir úr starfinu'
     cache_metadata:
       max-age: -1
       contexts:

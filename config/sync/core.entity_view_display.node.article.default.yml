@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.node.article.body
-    - field.field.node.article.comment
     - field.field.node.article.field_mynd
     - field.field.node.article.field_tags
     - node.type.article
@@ -56,5 +55,4 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
-  comment: true
   langcode: true

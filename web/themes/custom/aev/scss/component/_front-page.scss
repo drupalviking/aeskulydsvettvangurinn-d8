@@ -248,178 +248,180 @@
   }
 }
 
-.view-forsidukassar {
-  li {
-    .layout__region {
-      height: 300px;
-      padding: 0 40px;
-    }
-
-    h2 {
-      text-align: center;
-    }
-  }
-}
-
-.view-starfsemi-aev {
-  color: $color-white;
-
-  h1 {
-    color: $aev-color;
-
-    span {
-      border-color: $aev-color;
-    }
-  }
-
-  li {
-    .frontpage-box-with-image {
-      height: 300px;
-      padding: 0 10px;
-      background-color: $aev-color;
-    }
-
-    h2 {
-      text-align: center;
-      color: $color-white;
-    }
-  }
-
-  .buttons {
-    .field--name-node-link {
-      background-color: $color-white;
-      border-color: $color-white;
-      a {
-        color: $aev-color;
+.path-frontpage{
+  .view-forsidukassar {
+    li {
+      .layout__region {
+        height: 300px;
+        padding: 0 40px;
       }
 
-      &:hover {
-        background-color: $secondary-red;
-        a{
-          color: $color-white;
-        }
-      }
-    }
-  }
-}
-
-.view-frettir {
-  h1 {
-    color: $news-color;
-
-    span {
-      border-color: $news-color;
-    }
-  }
-
-  li {
-    @media screen and (min-width: 769px) and (max-width: 1000px){
-      padding-left: 10px;
-      padding-right: 10px;
-
-      &:first-child {
-        padding-left: 0;
-      }
-
-      &:last-child {
-        padding-right: 0;
-      }
-    }
-
-    .frontpage-box-with-image {
-      height: 600px;
       h2 {
-        color: $news-color;
+        text-align: center;
       }
+    }
+  }
 
-      @media screen and (min-width: 320px) and (max-width: 768px) {
-        height: auto;
-        padding-bottom: 30px;
-      }
+  .view-starfsemi-aev {
+    color: $color-white;
 
-      .media-images.view-mode-landscape {
-        margin-bottom: 0;
+    h1 {
+      color: $aev-color;
+
+      span {
+        border-color: $aev-color;
       }
     }
 
-    .text {
-      padding: 0 40px;
-
-      @media screen and (min-width: 769px) and (max-width: 1000px){
+    li {
+      .frontpage-box-with-image {
+        height: 300px;
         padding: 0 10px;
+        background-color: $aev-color;
+      }
+
+      h2 {
+        text-align: center;
+        color: $color-white;
       }
     }
 
     .buttons {
       .field--name-node-link {
-        background-color: $news-color;
+        background-color: $color-white;
+        border-color: $color-white;
+        a {
+          color: $aev-color;
+        }
+
+        &:hover {
+          background-color: $secondary-red;
+          a{
+            color: $color-white;
+          }
+        }
+      }
+    }
+  }
+
+  .view-frettir {
+    h1 {
+      color: $news-color;
+
+      span {
         border-color: $news-color;
+      }
+    }
+
+    li {
+      @media screen and (min-width: 769px) and (max-width: 1000px){
+        padding-left: 10px;
+        padding-right: 10px;
+
+        &:first-child {
+          padding-left: 0;
+        }
+
+        &:last-child {
+          padding-right: 0;
+        }
+      }
+
+      .frontpage-box-with-image {
+        height: 600px;
+        h2 {
+          color: $news-color;
+        }
+
+        @media screen and (min-width: 320px) and (max-width: 768px) {
+          height: auto;
+          padding-bottom: 30px;
+        }
+
+        .media-images.view-mode-landscape {
+          margin-bottom: 0;
+        }
+      }
+
+      .text {
+        padding: 0 40px;
+
+        @media screen and (min-width: 769px) and (max-width: 1000px){
+          padding: 0 10px;
+        }
+      }
+
+      .buttons {
+        .field--name-node-link {
+          background-color: $news-color;
+          border-color: $news-color;
+
+          &:hover {
+            background-color: $color-white;
+            a {
+              color: $news-color;
+            }
+          }
+        }
+
+        @media screen and (min-width: 320px) and (max-width: 768px){
+          text-align: center;
+
+          .field--name-node-link {
+            position: relative;
+            bottom: 0;
+            left: 0;
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .view-verkefni {
+    h1 {
+      color: $project-color;
+
+      span {
+        border-color: $project-color;
+      }
+    }
+
+    .texts {
+      height: 260px;
+
+      .field--name-node-title {
+        display: inline-block;
+
+
+        h2 {
+          text-align: center;
+          color: #333;
+        }
+      }
+    }
+
+    .buttons {
+      text-align: center;
+
+      .field--name-node-link {
+        background-color: $project-color;
+        border-color: $project-color;
+        position: relative;
+        left: 0;
+        margin: 0;
 
         &:hover {
           background-color: $color-white;
           a {
-            color: $news-color;
+            color: $project-color;
           }
         }
       }
-
-      @media screen and (min-width: 320px) and (max-width: 768px){
-        text-align: center;
-
-        .field--name-node-link {
-          position: relative;
-          bottom: 0;
-          left: 0;
-          margin-left: 0;
-        }
-      }
     }
   }
 }
 
-.view-verkefni {
-  h1 {
-    color: $project-color;
-
-    span {
-      border-color: $project-color;
-    }
-  }
-
-  position: relative;
-
-  .texts {
-    text-align: center;
-    position: absolute;
-    top: 30px;
-    width: 100%;
-
-    .field--name-node-title {
-      background-color: $project-color-alpha;
-      display: inline-block;
-      padding: 10px 20px;
-
-      h2 {
-        margin: 0;
-        color: $color-white;
-      }
-    }
-  }
-
-  .buttons {
-    .field--name-node-link {
-      background-color: $project-color;
-      border-color: $project-color;
-
-      &:hover {
-        background-color: $color-white;
-        a {
-          color: $project-color;
-        }
-      }
-    }
-  }
-}
 
 .user-logged-in {
   .hero-section {

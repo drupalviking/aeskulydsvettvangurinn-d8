@@ -5,7 +5,6 @@ dependencies:
   config:
     - core.entity_view_mode.node.forsidukassar
     - field.field.node.article.body
-    - field.field.node.article.comment
     - field.field.node.article.field_mynd
     - field.field.node.article.field_tags
     - node.type.article
@@ -79,7 +78,6 @@ content:
             lb-col: false
             classes: {  }
 hidden:
-  comment: true
   field_tags: true
   langcode: true
   links: true

@@ -5,12 +5,10 @@ dependencies:
   config:
     - entity_browser.browser.media_browser
     - field.field.node.article.body
-    - field.field.node.article.comment
     - field.field.node.article.field_mynd
     - field.field.node.article.field_tags
     - node.type.article
   module:
-    - comment
     - entity_browser
     - path
     - text
@@ -29,12 +27,6 @@ content:
       rows: 9
       summary_rows: 3
       placeholder: ''
-    third_party_settings: {  }
-  comment:
-    type: comment_default
-    weight: 20
-    region: content
-    settings: {  }
     third_party_settings: {  }
   created:
     type: datetime_timestamp

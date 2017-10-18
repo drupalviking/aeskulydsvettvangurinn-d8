@@ -76,6 +76,13 @@ body {
 h1.page-header {
   text-align: center;
   padding: 20px 0;
-  background-color: $primary-blue;
-  color: whitesmoke;
+  border-bottom: none;
+  background-color: $aev-color;
+}
+
+.path-frettir {
+  h1.page-header {
+    background-color: $news-color;
+    color: $color-white;
+  }
 }
