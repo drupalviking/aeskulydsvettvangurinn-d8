@@ -1,0 +1,12 @@
+<div class="pages-with-hero-image">
+    {% if content.hero|render %}
+        <div class="hero">
+            {{ content.hero }}
+        </div>
+    {% endif %}
+    <div class="texts">
+        <div class="text col-xs-12">
+            {{ content.text }}
+        </div>
+    </div>
+</div>

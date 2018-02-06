@@ -35,3 +35,13 @@ frontpage_boxes:
       label: Text
     buttons:
       label: Buttons
+
+pages_with_hero:
+  label: Pages with hero Images on Top
+  category: AEV layouts
+  template: templates/pages-with-hero
+  regions:
+    hero:
+      label: Hero Image
+    text:
+      label: Text Region
