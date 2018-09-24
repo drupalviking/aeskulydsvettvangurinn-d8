@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.rss
     - field.field.node.article.body
     - field.field.node.article.field_mynd
+    - field.field.node.article.field_skjol
     - field.field.node.article.field_tags
     - node.type.article
   module:
@@ -20,8 +21,11 @@ content:
   links:
     weight: 100
     region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   body: true
   field_mynd: true
+  field_skjol: true
   field_tags: true
   langcode: true
