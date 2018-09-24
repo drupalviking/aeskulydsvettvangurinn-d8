@@ -1,0 +1,28 @@
+uuid: 621ea575-57e7-4857-8812-0651fe2ce4ad
+langcode: is
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_skjol
+    - media_entity.bundle.documents
+    - node.type.book
+id: node.book.field_skjol
+field_name: field_skjol
+entity_type: node
+bundle: book
+label: Skjöl
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      documents: documents
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

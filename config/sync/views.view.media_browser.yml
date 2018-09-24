@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.media.field_image
     - image.style.thumbnail
-    - media_entity.bundle.documents
     - media_entity.bundle.images
     - media_entity.bundle.videos
   module:
@@ -339,7 +338,7 @@ display:
       arguments: {  }
       display_extenders: {  }
     cache_metadata:
-      max-age: 0
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
@@ -356,7 +355,7 @@ display:
       display_extenders: {  }
       display_description: ''
     cache_metadata:
-      max-age: 0
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'

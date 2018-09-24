@@ -17,6 +17,15 @@ targetEntityType: media
 bundle: images
 mode: default
 content:
+  field_height:
+    type: number_integer
+    weight: 2
+    region: content
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
   field_image:
     weight: 0
     label: hidden
@@ -33,11 +42,25 @@ content:
             classes: {  }
     type: image
     region: content
+  field_mime:
+    type: string
+    weight: 3
+    region: content
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_width:
+    type: number_integer
+    weight: 1
+    region: content
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
 hidden:
   created: true
-  field_height: true
-  field_mime: true
-  field_width: true
   langcode: true
   name: true
   thumbnail: true

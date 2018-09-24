@@ -14,17 +14,18 @@ dependencies:
 third_party_settings:
   ds:
     layout:
-      id: layout_onecol
-      library: layout_discovery/onecol
+      id: pages_with_hero
+      library: null
       disable_css: false
       entity_classes: all_classes
       settings: {  }
     regions:
-      content:
-        - body
-        - links
+      hero:
         - field_mynd
+      text:
+        - body
         - field_skjol
+        - links
 _core:
   default_config_hash: g1S3_GLaxq4l3I9RIca5Mlz02MxI2KmOquZpHw59akM
 id: node.page.default
@@ -35,15 +36,15 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 100
-    region: content
+    weight: 1
+    region: text
     settings: {  }
     third_party_settings: {  }
   field_mynd:
-    weight: 102
+    weight: 0
     label: hidden
     settings:
-      view_mode: landscape
+      view_mode: hero_mynd
       link: false
     third_party_settings:
       ds:
@@ -54,9 +55,9 @@ content:
             lb-col: false
             classes: {  }
     type: entity_reference_entity_view
-    region: content
+    region: hero
   field_skjol:
-    weight: 103
+    weight: 2
     label: hidden
     settings:
       view_mode: document_view
@@ -71,10 +72,10 @@ content:
             lb-col: false
             classes: {  }
     type: entity_reference_entity_view
-    region: content
+    region: text
   links:
-    weight: 101
-    region: content
+    weight: 3
+    region: text
     settings: {  }
     third_party_settings: {  }
 hidden:

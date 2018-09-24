@@ -1,0 +1,38 @@
+uuid: 2014eb2f-9a6b-461f-a3c2-43e8e1c67e57
+langcode: is
+status: true
+dependencies:
+  config:
+    - field.field.node.book.body
+    - field.field.node.book.field_skjol
+    - node.type.book
+  module:
+    - text
+    - user
+_core:
+  default_config_hash: UWTnZUj-u-jp8I_S1C1nUCTlM5iIV2QKdxm37ehFjoI
+id: node.book.default
+targetEntityType: node
+bundle: book
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_skjol:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 101
+    region: content
+hidden:
+  langcode: true

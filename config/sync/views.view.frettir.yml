@@ -208,7 +208,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: '<h1 class="frontpage-block-headline"><span>Fréttir frá starfinu</span></h1>'
+            value: '<h1 class="frontpage-block-headline"><span>Fréttir af starfinu</span></h1>'
             format: full_html
           plugin_id: text
       footer: {  }

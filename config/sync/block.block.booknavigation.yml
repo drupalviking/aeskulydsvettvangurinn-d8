@@ -1,0 +1,21 @@
+uuid: cfe3ef2c-95b5-404f-9b64-bc6e6e8ee0f3
+langcode: is
+status: true
+dependencies:
+  module:
+    - book
+  theme:
+    - aev
+id: booknavigation
+theme: aev
+region: content
+weight: 0
+provider: null
+plugin: book_navigation
+settings:
+  id: book_navigation
+  label: 'Book navigation'
+  provider: book
+  label_display: '0'
+  block_mode: 'book pages'
+visibility: {  }
